@@ -79,8 +79,8 @@ function renderCharacters() {
                 selectedCharacters.push(character.id);
             }
 
-            renderCharacters();
-            renderStories();
+          renderCharacters();
+renderStoriesWithTransition();
         });
 
         characterGrid.appendChild(button);
@@ -283,7 +283,22 @@ function renderStories() {
     });
 }
 
+// Gently transition when story results update
+let storyTransitionTimer;
 
+ renderStoriesWithTransition() {
+    clearTimeout(storyTransitionTimer);
+
+    storyList.classList.add("is-updating");
+
+    storyTransitionTimer = setTimeout(() => {
+        renderStories();
+
+        requestAnimationFrame(() => {
+            storyList.classList.remove("is-updating");
+        });
+    }, 90);
+}
 function clearFilters() {
     searchInput.value = "";
     unitFilter.value = "";
@@ -291,7 +306,7 @@ function clearFilters() {
     selectedCharacters = [];
 
     renderCharacters();
-    renderStories();
+   renderStoriesWithTransition();
 }
 
 async function loadArchive() {
@@ -320,7 +335,7 @@ async function loadArchive() {
     }
 }
 
-searchInput.addEventListener("input", renderStories);
+searchInput.addEventListener("input", renderStoriesWithTransition);
 
 unitFilter.addEventListener("change", () => {
     selectedCharacters = selectedCharacters.filter(id => {
@@ -330,10 +345,10 @@ unitFilter.addEventListener("change", () => {
     });
 
     renderCharacters();
-    renderStories();
+   renderStoriesWithTransition();
 });
 
-typeFilter.addEventListener("change", renderStories);
+typeFilter.addEventListener("change", renderStoriesWithTransition);
 
 document.getElementById("clear-filters")
     .addEventListener("click", clearFilters);
