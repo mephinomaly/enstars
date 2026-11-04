@@ -1,5 +1,7 @@
 // Soft page transitions
 document.addEventListener("DOMContentLoaded", () => {
+        // Fade in when the page loads
+    document.body.classList.add("page-ready");
 
     // Fade out gently when navigating to another page
     document.querySelectorAll("a[href]").forEach(link => {
