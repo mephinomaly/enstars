@@ -50,13 +50,13 @@
       "image": "./images/characters/eden/jun.png"
     }
   ],
-
   "stories": [
     {
       "id": "test-story",
       "title": "OISU Test Story",
       "unit": "undead",
       "type": "test",
+      "image": "./images/stories/test-story.png",
       "characters": ["adonis", "kaoru"],
       "description": "Temporary entry to test the archive and story links.",
       "url": "./stories/undead/test-story.html"
