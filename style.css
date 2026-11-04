@@ -118,7 +118,8 @@ body {
     color: var(--accent-dark);
 }
 
-.chapter-group a {
+.chapter-group a,
+.chapter-group a:visited {
     display: block;
     margin: 8px 0;
     padding: 10px 16px;
