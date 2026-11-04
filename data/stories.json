@@ -1,0 +1,65 @@
+
+{
+  "characters": [
+    {
+      "id": "rei",
+      "name": "Rei Sakuma",
+      "unit": "undead",
+      "image": "./images/characters/undead/rei.png"
+    },
+    {
+      "id": "kaoru",
+      "name": "Kaoru Hakaze",
+      "unit": "undead",
+      "image": "./images/characters/undead/kaoru.png"
+    },
+    {
+      "id": "koga",
+      "name": "Koga Oogami",
+      "unit": "undead",
+      "image": "./images/characters/undead/koga.png"
+    },
+    {
+      "id": "adonis",
+      "name": "Adonis Otogari",
+      "unit": "undead",
+      "image": "./images/characters/undead/adonis.png"
+    },
+    {
+      "id": "nagisa",
+      "name": "Nagisa Ran",
+      "unit": "eden",
+      "image": "./images/characters/eden/nagisa.png"
+    },
+    {
+      "id": "hiyori",
+      "name": "Hiyori Tomoe",
+      "unit": "eden",
+      "image": "./images/characters/eden/hiyori.png"
+    },
+    {
+      "id": "ibara",
+      "name": "Ibara Saegusa",
+      "unit": "eden",
+      "image": "./images/characters/eden/ibara.png"
+    },
+    {
+      "id": "jun",
+      "name": "Jun Sazanami",
+      "unit": "eden",
+      "image": "./images/characters/eden/jun.png"
+    }
+  ],
+
+  "stories": [
+    {
+      "id": "test-story",
+      "title": "OISU Test Story",
+      "unit": "undead",
+      "type": "test",
+      "characters": ["adonis", "kaoru"],
+      "description": "Temporary entry to test the archive and story links.",
+      "url": "./stories/undead/test-story.html"
+    }
+  ]
+}
