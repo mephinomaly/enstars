@@ -87,6 +87,7 @@ function renderCharacters() {
     });
 }
 
+
 function renderStories() {
     const search = searchInput.value.trim().toLowerCase();
 
@@ -111,7 +112,6 @@ function renderStories() {
         const matchesType =
             !typeFilter.value || story.type === typeFilter.value;
 
-        // When multiple characters are selected, a story must feature all of them.
         const matchesCharacters = selectedCharacters.every(id =>
             (story.characters || []).includes(id)
         );
@@ -142,48 +142,147 @@ function renderStories() {
     }
 
     filteredStories.forEach(story => {
-        const card = makeElement("article", "story-card");
+        // Create the expandable card
+        const card = makeElement("details", "story-card");
 
-        card.appendChild(
-            makeElement(
-                "span",
-                "story-unit",
-                unitNames[story.unit] || story.unit
-            )
+        // The always-visible part of the card
+        const summary = makeElement("summary", "story-card-summary");
+
+        // Story thumbnail
+        const thumbnail = makeElement("div", "story-thumbnail");
+
+        if (story.image) {
+            const image = document.createElement("img");
+            image.src = story.image;
+            image.alt = story.title;
+            image.loading = "lazy";
+
+            image.addEventListener("error", () => {
+                image.replaceWith(
+                    makeElement("span", "story-image-placeholder", "♡")
+                );
+            });
+
+            thumbnail.appendChild(image);
+        } else {
+            thumbnail.appendChild(
+                makeElement("span", "story-image-placeholder", "♡")
+            );
+        }
+
+        summary.appendChild(thumbnail);
+
+        // Title and story information
+        const heading = makeElement("div", "story-heading");
+
+        heading.appendChild(
+            makeElement("h3", "story-title", story.title)
         );
 
-        card.appendChild(
-            makeElement("h3", "", story.title)
+        const typeName = (story.type || "story")
+            .replace(/[-_]/g, " ")
+            .replace(/\b\w/g, letter => letter.toUpperCase());
+
+        heading.appendChild(
+            makeElement("span", "story-type", typeName)
         );
 
+        summary.appendChild(heading);
+
+        // Expand arrow
+        summary.appendChild(
+            makeElement("span", "story-chevron", "⌄")
+        );
+
+        card.appendChild(summary);
+
+        // The expandable content
+        const expanded = makeElement("div", "story-expanded");
+
+        const storyCharacters = (story.characters || [])
+            .map(id => characters.find(character => character.id === id))
+            .filter(Boolean);
+
+        if (storyCharacters.length) {
+            expanded.appendChild(
+                makeElement("h4", "expanded-heading", "Characters")
+            );
+
+            const characterRow = makeElement(
+                "div",
+                "story-character-list"
+            );
+
+            storyCharacters.forEach(character => {
+                const characterItem = makeElement(
+                    "div",
+                    "story-character"
+                );
+
+                if (character.image) {
+                    const image = document.createElement("img");
+                    image.src = character.image;
+                    image.alt = character.name;
+                    image.loading = "lazy";
+
+                    image.addEventListener("error", () => {
+                        image.replaceWith(
+                            makeElement(
+                                "span",
+                                "story-character-placeholder",
+                                character.name.charAt(0)
+                            )
+                        );
+                    });
+
+                    characterItem.appendChild(image);
+                } else {
+                    characterItem.appendChild(
+                        makeElement(
+                            "span",
+                            "story-character-placeholder",
+                            character.name.charAt(0)
+                        )
+                    );
+                }
+
+                characterItem.appendChild(
+                    makeElement("span", "", character.name)
+                );
+
+                characterRow.appendChild(characterItem);
+            });
+
+            expanded.appendChild(characterRow);
+        }
+
+        // Story description
         if (story.description) {
-            card.appendChild(
+            expanded.appendChild(
+                makeElement("h4", "expanded-heading", "Summary")
+            );
+
+            expanded.appendChild(
                 makeElement("p", "story-description", story.description)
             );
         }
 
-        const names = (story.characters || [])
-            .map(id => characters.find(character => character.id === id))
-            .filter(Boolean)
-            .map(character => character.name);
+        // Read story link
+        const link = makeElement(
+            "a",
+            "story-link",
+            "Read translation →"
+        );
 
-        if (names.length) {
-            card.appendChild(
-                makeElement(
-                    "p",
-                    "story-characters",
-                    "Characters: " + names.join(", ")
-                )
-            );
-        }
-
-        const link = makeElement("a", "story-link", "Read translation →");
         link.href = story.url;
 
-        card.appendChild(link);
+        expanded.appendChild(link);
+        card.appendChild(expanded);
+
         storyList.appendChild(card);
     });
 }
+
 
 function clearFilters() {
     searchInput.value = "";
