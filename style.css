@@ -166,5 +166,20 @@ body {
     background: var(--surface);
     text-decoration: underline;
 }
+/* Soft page transitions */
+body {
+    opacity: 1;
+    transition: opacity 220ms ease;
+}
 
+body.page-leaving {
+    opacity: 0;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        transition: none;
+    }
+}
 
