@@ -43,11 +43,17 @@
       "unit": "eden",
       "image": "./images/characters/eden/ibara.png"
     },
-    {
+        {
       "id": "jun",
       "name": "Jun Sazanami",
       "unit": "eden",
       "image": "./images/characters/eden/jun.png"
+    },
+    {
+      "id": "tatsumi",
+      "name": "Tatsumi Kazehaya",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/tatsumi.png"
     }
   ],
   "stories": [
