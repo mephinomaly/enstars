@@ -154,44 +154,50 @@
             gap: 13px;
         }
 
-        .character-button {
-            border: 1px solid var(--border);
-            background: var(--surface);
-            color: var(--text);
-            border-radius: 13px;
-            padding: 9px 5px;
-            transition: 0.2s;
-        }
+       .character-button {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
 
-        .character-button:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent);
-        }
+.character-button:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
 
-        .character-button.selected {
-            border: 2px solid var(--accent);
-            background: var(--surface-soft);
-            box-shadow: var(--shadow);
-        }
+.character-button.selected {
+    border: 2px solid var(--accent);
+    background: var(--surface-soft);
+    box-shadow: var(--shadow);
+}
 
-        .character-button img,
-        .character-placeholder {
-            display: block;
-            width: min(100%, 92px);
-            aspect-ratio: 1;
-            object-fit: cover;
-            border-radius: 11px;
-            margin: 0 auto 7px;
-        }
+.character-button img,
+.character-placeholder {
+    display: block;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 3px;
+}
 
-        .character-placeholder {
-            display: grid;
-            place-items: center;
-            background: var(--surface-soft);
-            color: var(--accent-dark);
-            font-size: 25px;
-            font-weight: bold;
-        }
+.character-placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--surface-soft);
+    color: var(--accent-dark);
+    font-size: 25px;
+    font-weight: bold;
+}
 
         .character-name {
             display: block;
