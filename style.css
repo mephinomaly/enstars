@@ -75,9 +75,25 @@ body {
     line-height: 1.3;
 }
 
+
 .story-characters {
-    color: var(--muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px auto;
 }
+
+.story-characters img {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: var(--surface-soft);
+    padding: 4px;
+}
+
 
 .chapters {
     margin: 40px 0;
