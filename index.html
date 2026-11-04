@@ -1,28 +1,404 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enstars Translations</title>
+
+    <title>Enstars Translations ♡</title>
+
+    <meta name="description" content="An unofficial Ensemble Stars translation archive.">
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #fff9fa;
+            --surface: #ffffff;
+            --surface-soft: #fff0f3;
+            --text: #66535e;
+            --muted: #a18d98;
+            --accent: #d99eaf;
+            --accent-dark: #a96982;
+            --border: #f0dfe5;
+            --shadow: 0 5px 20px rgba(130, 85, 105, 0.07);
+        }
+
+        :root[data-theme="dark"] {
+            color-scheme: dark;
+            --bg: #211d24;
+            --surface: #2d2731;
+            --surface-soft: #3a303b;
+            --text: #f0e5ec;
+            --muted: #b6a3b0;
+            --accent: #d69ab3;
+            --accent-dark: #f0b5cc;
+            --border: #493b49;
+            --shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            line-height: 1.6;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        button, input, select {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .container {
+            width: min(100% - 36px, 920px);
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 28px 0 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--accent-dark);
+        }
+
+        .theme-button {
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            border-radius: 50px;
+            padding: 8px 13px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 10px 38px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 6vw, 46px);
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 650px;
+            margin: 25px auto 0;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 13px 17px;
+            box-shadow: var(--shadow);
+        }
+
+        .search-box span {
+            color: var(--muted);
+        }
+
+        .search-box input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: var(--text);
+        }
+
+        .section {
+            margin: 28px 0;
+        }
+
+        .section-heading {
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 13px;
+        }
+
+        .character-button {
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            border-radius: 13px;
+            padding: 9px 5px;
+            transition: 0.2s;
+        }
+
+        .character-button:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+
+        .character-button.selected {
+            border: 2px solid var(--accent);
+            background: var(--surface-soft);
+            box-shadow: var(--shadow);
+        }
+
+        .character-button img,
+        .character-placeholder {
+            display: block;
+            width: min(100%, 92px);
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 11px;
+            margin: 0 auto 7px;
+        }
+
+        .character-placeholder {
+            display: grid;
+            place-items: center;
+            background: var(--surface-soft);
+            color: var(--accent-dark);
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .character-name {
+            display: block;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .filter-row select {
+            flex: 1;
+            min-width: 145px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .clear-button {
+            border: none;
+            background: transparent;
+            color: var(--accent-dark);
+            font-size: 12px;
+            text-decoration: underline;
+            padding: 8px 0;
+        }
+
+        .archive-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .archive-heading h2 {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            margin: 0;
+        }
+
+        .result-count {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .story-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            padding: 17px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .story-unit {
+            display: inline-block;
+            font-size: 10px;
+            color: var(--accent-dark);
+            background: var(--surface-soft);
+            border-radius: 30px;
+            padding: 3px 10px;
+            margin-bottom: 7px;
+        }
+
+        .story-card h3 {
+            font-size: 17px;
+            margin: 0 0 5px;
+        }
+
+        .story-description,
+        .story-characters {
+            color: var(--muted);
+            font-size: 12px;
+            margin: 4px 0;
+        }
+
+        .story-link {
+            display: inline-block;
+            color: var(--accent-dark);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .story-link:hover {
+            text-decoration: underline;
+        }
+
+        .empty-state {
+            background: var(--surface);
+            border: 1px dashed var(--border);
+            border-radius: 13px;
+            text-align: center;
+            padding: 35px 18px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+            padding: 25px 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        @media (min-width: 650px) {
+            .character-grid {
+                grid-template-columns: repeat(8, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 380px) {
+            .character-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Enstars Translations</h1>
-
-    <div class="oissu">
-
-        <blockquote>
-            <p><b>Time:</b> A few hours later</p>
-            <p><b>Location:</b> On a remote island, the second venue for the puzzle-solving game</p>
-        </blockquote>
-
-        <p><b>Adonis:</b> …Is that the location of the final puzzle?</p>
-
-        <p><b>Kaoru:</b> Yup. Looks like everyone's having a blast with the final challenge. And there haven't been any major bottlenecks, either, which is great.</p>
-
+<header>
+    <div class="container topbar">
+        <div class="brand">ENSTARS ARCHIVE ♡</div>
+        <button class="theme-button" id="theme-toggle" type="button">
+            ☾ Dark mode
+        </button>
     </div>
+</header>
 
-    <script src="./main.js"></script>
+<main class="container">
+
+    <section class="hero">
+        <h1>Enstars Translations ♡</h1>
+        <p>An unofficial Ensemble Stars story translation archive.</p>
+
+        <label class="search-box">
+            <span>⌕</span>
+            <input
+                id="search"
+                type="search"
+                placeholder="Search stories, characters, events..."
+                autocomplete="off"
+            >
+        </label>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">FIND YOUR FAVOURITES ♡</div>
+
+        <div id="character-grid" class="character-grid">
+            <p>Loading characters...</p>
+        </div>
+
+        <div class="filter-row">
+            <select id="unit-filter" aria-label="Filter by unit">
+                <option value="">All units</option>
+                <option value="undead">Undead</option>
+                <option value="eden">Eden</option>
+            </select>
+
+            <select id="type-filter" aria-label="Filter by story type">
+                <option value="">All story types</option>
+                <option value="event">Event story</option>
+                <option value="scout">Scout story</option>
+                <option value="idol">Idol story</option>
+                <option value="main">Main story</option>
+                <option value="other">Other</option>
+                <option value="test">Test</option>
+            </select>
+
+            <button class="clear-button" id="clear-filters" type="button">
+                Clear filters
+            </button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="archive-heading">
+            <h2>TRANSLATION ARCHIVE</h2>
+            <span class="result-count" id="result-count"></span>
+        </div>
+
+        <div id="story-list">
+            <div class="empty-state">Loading archive...</div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    Unofficial fan translations · Not affiliated with Happy Elements
+    <br>
+    Made with ♡
+</footer>
+
+<script src="./archive.js"></script>
 
 </body>
 </html>
