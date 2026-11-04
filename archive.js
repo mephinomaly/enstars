@@ -286,7 +286,7 @@ function renderStories() {
 // Gently transition when story results update
 let storyTransitionTimer;
 
- renderStoriesWithTransition() {
+function renderStoriesWithTransition() {
     clearTimeout(storyTransitionTimer);
 
     storyList.classList.add("is-updating");
