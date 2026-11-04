@@ -68,9 +68,7 @@ function renderCharacters() {
             button.appendChild(placeholder);
         }
 
-        button.appendChild(
-            makeElement("span", "character-name", character.name)
-        );
+     button.title = character.name;
 
         button.addEventListener("click", () => {
             if (selectedCharacters.includes(character.id)) {
