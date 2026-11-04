@@ -168,18 +168,20 @@ body {
 }
 /* Soft page transitions */
 body {
+    opacity: 0;
+    transition: opacity 220ms ease, background 0.2s, color 0.2s;
+}
+
+body.page-ready {
     opacity: 1;
-    transition: opacity 220ms ease;
 }
 
 body.page-leaving {
     opacity: 0;
 }
 
-/* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
     body {
         transition: none;
     }
 }
-
