@@ -137,3 +137,34 @@ body {
     color: var(--accent-dark);
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--accent-dark);
+    text-decoration: none;
+}
+
+.chapter-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.chapter-navigation a {
+    color: var(--accent-dark);
+    text-decoration: none;
+    padding: 10px 16px;
+    background: var(--surface-soft);
+    border-radius: 10px;
+}
+
+.chapter-navigation a:hover {
+    background: var(--surface);
+    text-decoration: underline;
+}
+
+
