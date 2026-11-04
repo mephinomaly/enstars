@@ -185,3 +185,18 @@ body.page-leaving {
         transition: none;
     }
 }
+/* Gentle story result transitions */
+#story-list {
+    opacity: 1;
+    transition: opacity 180ms ease;
+}
+
+#story-list.is-updating {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #story-list {
+        transition: none;
+    }
+}
