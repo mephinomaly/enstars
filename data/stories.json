@@ -72,7 +72,7 @@
     "title": "In Memoriam◆Handwriting, Chasing, Rambling",
     "unit": "undead",
     "type": "event",
-    "image": "./images/stories/in-memoriam.png",
+    "image": "./images/stories/in-memoriam/in-memoriam.png",
     "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
     "description": "An event story featuring UNDEAD and Tatsumi Kazehaya.",
     "url": "./stories/in-memoriam/index.html"
