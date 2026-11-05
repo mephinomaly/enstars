@@ -262,7 +262,8 @@ body.page-leaving {
     letter-spacing: 0.5px;
 }
 
-/* Card CG dropdown */
+
+/* Card CG gallery */
 .card-cgs {
     margin-top: 20px;
     padding-top: 14px;
@@ -272,7 +273,24 @@ body.page-leaving {
 .card-cgs summary {
     cursor: pointer;
     font-weight: 600;
+    padding: 8px 0;
 }
+
+.card-cgs summary:hover {
+    color: var(--accent-dark);
+}
+
+.card-cgs p {
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 12px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 
 /* Mobile layout */
 @media (max-width: 700px) {
