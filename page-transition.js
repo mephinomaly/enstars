@@ -1,34 +1,30 @@
-// Soft page transitions
 document.addEventListener("DOMContentLoaded", () => {
-        // Fade in when the page loads
     document.body.classList.add("page-ready");
+});
 
-    // Fade out gently when navigating to another page
-    document.querySelectorAll("a[href]").forEach(link => {
+document.addEventListener("click", event => {
+    const link = event.target.closest("a[href]");
 
-        link.addEventListener("click", event => {
-            const destination = new URL(link.href, window.location.href);
+    if (
+        !link ||
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        link.target === "_blank" ||
+        link.hasAttribute("download") ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        event.altKey
+    ) return;
 
-            // Ignore external links and special link behaviours
-            if (
-                destination.origin !== window.location.origin ||
-                link.target === "_blank" ||
-                link.hasAttribute("download") ||
-                event.ctrlKey ||
-                event.metaKey ||
-                event.shiftKey ||
-                event.altKey
-            ) {
-                return;
-            }
+    const destination = new URL(link.href, window.location.href);
 
-            event.preventDefault();
+    if (destination.origin !== window.location.origin) return;
 
-            document.body.classList.add("page-leaving");
+    event.preventDefault();
+    document.body.classList.add("page-leaving");
 
-            setTimeout(() => {
-                window.location.href = destination.href;
-            }, 220);
-        });
-    });
+    setTimeout(() => {
+        window.location.href = destination.href;
+    }, 220);
 });
