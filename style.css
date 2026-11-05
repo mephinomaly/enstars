@@ -200,3 +200,11 @@ body.page-leaving {
         transition: none;
     }
 }
+.event-date {
+    margin-top: 14px;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
