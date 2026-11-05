@@ -12,7 +12,8 @@ let selectedCharacters = [];
 
 const unitNames = {
     undead: "UNDEAD",
-    eden: "Eden"
+    eden: "Eden",
+    alkaloid: "ALKALOID"
 };
 
 function makeElement(tag, className, text) {
