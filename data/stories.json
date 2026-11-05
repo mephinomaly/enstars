@@ -2,6 +2,54 @@
 {
   "characters": [
     {
+      "id": "hiiro",
+      "name": "Hiiro Amagi",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/hiiro.png"
+    },
+    {
+      "id": "aira",
+      "name": "Aira Shiratori",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/aira.png"
+    },
+    {
+      "id": "mayoi",
+      "name": "Mayoi Ayase",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/mayoi.png"
+    },
+    {
+      "id": "tatsumi",
+      "name": "Tatsumi Kazehaya",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/tatsumi.png"
+    },
+    {
+      "id": "nagisa",
+      "name": "Nagisa Ran",
+      "unit": "eden",
+      "image": "./images/characters/eden/nagisa.png"
+    },
+    {
+      "id": "hiyori",
+      "name": "Hiyori Tomoe",
+      "unit": "eden",
+      "image": "./images/characters/eden/hiyori.png"
+    },
+    {
+      "id": "ibara",
+      "name": "Ibara Saegusa",
+      "unit": "eden",
+      "image": "./images/characters/eden/ibara.png"
+    },
+    {
+      "id": "jun",
+      "name": "Jun Sazanami",
+      "unit": "eden",
+      "image": "./images/characters/eden/jun.png"
+    },
+    {
       "id": "rei",
       "name": "Rei Sakuma",
       "unit": "undead",
@@ -24,79 +72,28 @@
       "name": "Adonis Otogari",
       "unit": "undead",
       "image": "./images/characters/undead/adonis.png"
-    },
-    {
-      "id": "nagisa",
-      "name": "Nagisa Ran",
-      "unit": "eden",
-      "image": "./images/characters/eden/nagisa.png"
-    },
-    {
-      "id": "hiyori",
-      "name": "Hiyori Tomoe",
-      "unit": "eden",
-      "image": "./images/characters/eden/hiyori.png"
-    },
-    {
-      "id": "ibara",
-      "name": "Ibara Saegusa",
-      "unit": "eden",
-      "image": "./images/characters/eden/ibara.png"
-    },
-        {
-      "id": "jun",
-      "name": "Jun Sazanami",
-      "unit": "eden",
-      "image": "./images/characters/eden/jun.png"
-    },
-     {
-      "id": "hiiro",
-      "name": "Hiiro Amagi",
-      "unit": "alkaloid",
-      "image": "./images/characters/alkaloid/hiiro.png"
-    },
-       {
-      "id": "aira",
-      "name": "Aira Shiratori",
-      "unit": "alkaloid",
-      "image": "./images/characters/alkaloid/aira.png"
-    },
-        {
-      "id": "mayoi",
-      "name": "Mayoi Ayase",
-      "unit": "alkaloid",
-      "image": "./images/characters/alkaloid/mayoi.png"
-    },
-     {
-      "id": "tatsumi",
-      "name": "Tatsumi Kazehaya",
-      "unit": "alkaloid",
-      "image": "./images/characters/alkaloid/tatsumi.png"
-    },
-
- 
-   
+    }
   ],
   "stories": [
-  {
-    "id": "test-story",
-    "title": "OISU Test Story",
-    "unit": "undead",
-    "type": "test",
-    "image": "./images/stories/test-story.png",
-    "characters": ["adonis", "kaoru"],
-   "description":"test",
-    "url": "./stories/undead/test-story.html"
-  },
-  {
-    "id": "in-memoriam",
-    "title": "In Memoriam◆Handwriting, Chasing, Rambling",
-    "unit": "undead",
-    "type": "event",
-    "image": "./images/stories/in-memoriam/in-memoriam.png",
-    "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
-    "description": "Koga is chosen to judge for a Middle School Band Contest. After seeing a band inspired by the legendary rock group “MARBLING”, Koga speaks passionately about his love for rock music when sudden news breaks...",
-    "url": "./stories/in-memoriam/index.html"
-  }
-]
+    {
+      "id": "test-story",
+      "title": "OISU Test Story",
+      "unit": "undead",
+      "type": "test",
+      "image": "./images/stories/test-story.png",
+      "characters": ["adonis", "kaoru"],
+      "description": "test",
+      "url": "./stories/undead/test-story.html"
+    },
+    {
+      "id": "in-memoriam",
+      "title": "In Memoriam◆Handwriting, Chasing, Rambling",
+      "unit": "undead",
+      "type": "event",
+      "image": "./images/stories/in-memoriam/in-memoriam.png",
+      "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
+      "description": "Koga is chosen to judge for a Middle School Band Contest. After seeing a band inspired by the legendary rock group “MARBLING”, Koga speaks passionately about his love for rock music when sudden news breaks...",
+      "url": "./stories/in-memoriam/index.html"
+    }
+  ]
 }
