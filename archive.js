@@ -267,16 +267,28 @@ function renderStories() {
             );
         }
 
-        // Read story link
-        const link = makeElement(
-            "a",
-            "story-link",
-            "Read translation →"
-        );
+     // Read story link
+const link = makeElement(
+    "a",
+    "story-link",
+    "Read translation →"
+);
 
-        link.href = story.url;
+link.href = story.url;
 
-        expanded.appendChild(link);
+link.addEventListener("click", event => {
+    event.preventDefault();
+
+    const destination = link.href;
+
+    document.body.classList.add("page-leaving");
+
+    setTimeout(() => {
+        window.location.href = destination;
+    }, 220);
+});
+
+expanded.appendChild(link);
         card.appendChild(expanded);
 
         storyList.appendChild(card);
