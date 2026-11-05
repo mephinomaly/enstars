@@ -11,7 +11,7 @@ let stories = [];
 let selectedCharacters = [];
 
 const unitNames = {
-    undead: "Undead",
+    undead: "UNDEAD",
     eden: "Eden"
 };
 
