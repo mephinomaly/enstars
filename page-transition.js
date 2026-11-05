@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("click", event => {
-    const link = event.target.closest("a[href]");
+    const link = event.composedPath().find(
+    element => element instanceof HTMLAnchorElement
+);
 
     if (
         !link ||
