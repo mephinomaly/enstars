@@ -57,15 +57,25 @@
     }
   ],
   "stories": [
-    {
-      "id": "test-story",
-      "title": "OISU Test Story",
-      "unit": "undead",
-      "type": "test",
-      "image": "./images/stories/test-story.png",
-      "characters": ["adonis", "kaoru"],
-      "description": "Temporary entry to test the archive and story links.",
-      "url": "./stories/undead/test-story.html"
-    }
-  ]
+  {
+    "id": "test-story",
+    "title": "OISU Test Story",
+    "unit": "undead",
+    "type": "test",
+    "image": "./images/stories/test-story.png",
+    "characters": ["adonis", "kaoru"],
+    "description": "Temporary entry to test the archive and story links.",
+    "url": "./stories/undead/test-story.html"
+  },
+  {
+    "id": "in-memoriam",
+    "title": "In Memoriam◆Handwriting, Chasing, Rambling",
+    "unit": "undead",
+    "type": "event",
+    "image": "./images/stories/in-memoriam.png",
+    "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
+    "description": "An event story featuring UNDEAD and Tatsumi Kazehaya.",
+    "url": "./stories/in-memoriam/index.html"
+  }
+]
 }
