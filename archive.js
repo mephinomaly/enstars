@@ -282,6 +282,7 @@ link.addEventListener("click", event => {
     const destination = link.href;
 
     document.body.classList.add("page-leaving");
+    console.log("Read translation fade triggered!");
 
     setTimeout(() => {
         window.location.href = destination;
