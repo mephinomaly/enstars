@@ -49,11 +49,29 @@
       "unit": "eden",
       "image": "./images/characters/eden/jun.png"
     },
-    {
+     {
       "id": "tatsumi",
       "name": "Tatsumi Kazehaya",
       "unit": "alkaloid",
       "image": "./images/characters/alkaloid/tatsumi.png"
+    },
+    {
+      "id": "mayoi",
+      "name": "Mayoi Ayase",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/mayoi.png"
+    },
+    {
+      "id": "aira",
+      "name": "Aira Shiratori",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/aira.png"
+    },
+    {
+      "id": "hiiro",
+      "name": "Hiiro Amagi",
+      "unit": "alkaloid",
+      "image": "./images/characters/alkaloid/hiiro.png"
     }
   ],
   "stories": [
