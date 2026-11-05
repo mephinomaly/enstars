@@ -25,7 +25,7 @@
       "name": "Adonis Otogari",
       "unit": "undead",
       "image": "./images/characters/undead/adonis.png"
-    }
+    },
     {
       "id": "hiiro",
       "name": "Hiiro Amagi",
@@ -73,7 +73,7 @@
       "name": "Jun Sazanami",
       "unit": "eden",
       "image": "./images/characters/eden/jun.png"
-    },
+    }
     
   ],
   "stories": [
