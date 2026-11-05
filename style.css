@@ -344,3 +344,66 @@ body.page-leaving {
     }
 }
 
+/* Card artwork lightbox */
+.card-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(25, 20, 35, 0.88);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-lightbox.is-open {
+    display: flex;
+}
+
+.card-lightbox-image {
+    display: block;
+    max-width: 90%;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Close button */
+.card-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.card-lightbox-close:hover {
+    color: #D5A642;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .card-lightbox {
+        padding: 15px;
+    }
+
+    .card-lightbox-image {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    .card-lightbox-close {
+        top: 10px;
+        right: 12px;
+    }
+}
+
+
