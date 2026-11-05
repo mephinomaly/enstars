@@ -64,7 +64,7 @@
     "type": "test",
     "image": "./images/stories/test-story.png",
     "characters": ["adonis", "kaoru"],
-    "description": "Temporary entry to test the archive and story links.",
+   "description":"Koga is chosen to judge for a Middle School Band Contest. After seeing a band inspired by the legendary rock group “MARBLING”, Koga speaks passionately about his love for rock music when sudden news breaks…",
     "url": "./stories/undead/test-story.html"
   },
   {
