@@ -455,4 +455,29 @@ body.page-leaving {
 }
 }
 
+/* Character portraits inside chapter links */
+.chapter-group a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Chapter character portrait row */
+.chapter-characters {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Individual character portraits */
+.chapter-characters img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+
 
