@@ -263,6 +263,7 @@ body.page-leaving {
 }
 
 
+
 /* Card CG gallery */
 .card-cgs {
     margin-top: 20px;
@@ -280,16 +281,60 @@ body.page-leaving {
     color: var(--accent-dark);
 }
 
-.card-cgs p {
-    background: var(--surface);
-    border: 1px dashed var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    margin-top: 12px;
-    color: var(--muted);
-    text-align: center;
-    font-size: 0.9rem;
+/* Individual card entries */
+.card-cg-entry {
+    margin-top: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
 }
+
+.card-cg-entry:last-child {
+    border-bottom: none;
+}
+
+/* Rarity stars */
+.card-cg-stars {
+    text-align: center;
+    color: #D5A642;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* Unbloomed and bloomed pair */
+.card-cg-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.card-cg-pair a {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.card-cg-pair img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: zoom-in;
+    transition: transform 180ms ease;
+}
+
+.card-cg-pair a:hover img {
+    transform: scale(1.04);
+}
+
+.card-cg-pair span {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+}
+
 
 
 /* Mobile layout */
