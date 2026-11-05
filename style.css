@@ -208,3 +208,76 @@ body.page-leaving {
     letter-spacing: 0.5px;
     text-align: center;
 }
+
+/* In Memoriam two-column layout */
+.story-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.85fr) minmax(250px, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin-top: 28px;
+}
+
+/* Event information sidebar */
+.event-info {
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* Sidebar headings */
+.event-info h2 {
+    margin-top: 0;
+}
+
+.event-info h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Smaller circular character portraits */
+.event-info .story-characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.event-info .story-characters img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Event type label */
+.event-type {
+    display: inline-block;
+    background: var(--accent);
+    color: #493F55;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Card CG dropdown */
+.card-cgs {
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+}
+
+.card-cgs summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .story-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
