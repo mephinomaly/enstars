@@ -3,6 +3,30 @@
   
   "characters": [
     {
+      "id": "rei",
+      "name": "Rei Sakuma",
+      "unit": "undead",
+      "image": "./images/characters/undead/rei.png"
+    },
+    {
+      "id": "kaoru",
+      "name": "Kaoru Hakaze",
+      "unit": "undead",
+      "image": "./images/characters/undead/kaoru.png"
+    },
+    {
+      "id": "koga",
+      "name": "Koga Oogami",
+      "unit": "undead",
+      "image": "./images/characters/undead/koga.png"
+    },
+    {
+      "id": "adonis",
+      "name": "Adonis Otogari",
+      "unit": "undead",
+      "image": "./images/characters/undead/adonis.png"
+    }
+    {
       "id": "hiiro",
       "name": "Hiiro Amagi",
       "unit": "alkaloid",
@@ -50,30 +74,7 @@
       "unit": "eden",
       "image": "./images/characters/eden/jun.png"
     },
-    {
-      "id": "rei",
-      "name": "Rei Sakuma",
-      "unit": "undead",
-      "image": "./images/characters/undead/rei.png"
-    },
-    {
-      "id": "kaoru",
-      "name": "Kaoru Hakaze",
-      "unit": "undead",
-      "image": "./images/characters/undead/kaoru.png"
-    },
-    {
-      "id": "koga",
-      "name": "Koga Oogami",
-      "unit": "undead",
-      "image": "./images/characters/undead/koga.png"
-    },
-    {
-      "id": "adonis",
-      "name": "Adonis Otogari",
-      "unit": "undead",
-      "image": "./images/characters/undead/adonis.png"
-    }
+    
   ],
   "stories": [
     {
