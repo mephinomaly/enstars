@@ -13,6 +13,26 @@
     </script>
 
     <link rel="stylesheet" href="../../style.css">
+
+<style>
+    .kaoru-perch {
+        position: relative;
+        height: 0;
+        z-index: 5;
+    }
+
+    .kaoru-perch img {
+        display: block;
+        position: absolute;
+        right: clamp(8px, 4vw, 36px);
+        bottom: 0;
+        width: clamp(120px, 22vw, 210px);
+        height: auto;
+        transform: translateY(8%);
+        pointer-events: none;
+    }
+</style>
+
 </head>
 <body>
     <header class="topbar">
@@ -32,7 +52,9 @@
                 <img src="../../images/characters/undead/adonis.png" alt="Adonis">
                 <img src="../../images/characters/undead/koga.png" alt="Koga">
             </div>
-
+<div class="kaoru-perch">
+    <img src="../../images/stories/velvet-ship/kaochibi.png" alt="Kaoru">
+</div>
            <div class="oissu">
 <blockquote>
 <p><b>Time:</b> Two years since ES’ establishment</p>
