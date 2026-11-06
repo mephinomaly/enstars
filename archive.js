@@ -203,8 +203,9 @@ const unitSection = makeElement("div", "unit-section");
                 });
             }
 
-            renderCharacters();
-            renderStoriesWithTransition();
+           renderCharacters();
+renderUndeadQuickFilters();
+renderStoriesWithTransition();
         });
 
       unitSection.appendChild(unitButton);
@@ -268,8 +269,9 @@ const unitSection = makeElement("div", "unit-section");
                     selectedCharacters.push(character.id);
                 }
 
-                renderCharacters();
-                renderStoriesWithTransition();
+               renderCharacters();
+renderUndeadQuickFilters();
+renderStoriesWithTransition();
             });
 
             characterRow.appendChild(button);
@@ -524,8 +526,9 @@ function clearFilters() {
     typeFilter.value = "";
     selectedCharacters = [];
 
-    renderCharacters();
-   renderStoriesWithTransition();
+  renderCharacters();
+renderUndeadQuickFilters();
+renderStoriesWithTransition();
 }
 
 async function loadArchive() {
