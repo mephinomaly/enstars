@@ -152,6 +152,11 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 18px;
     column-gap: 20px;
+            transition: opacity 300ms ease, transform 300ms ease;
+}
+      .character-grid.changing {
+    opacity: 0;
+    transform: translateY(6px);
 }
     .unit-section {
     display: flex;
