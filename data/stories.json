@@ -2,116 +2,135 @@
   "characters": [
     {
       "id": "rei",
-      "name": "Rei Sakuma",
-      "unit": "undead",
-      "image": "./images/characters/undead/rei.png"
+"name": "Rei Sakuma",
+"unit": "undead",
+"agency": "rhythm-link",
+"image": "./images/characters/undead/rei.png"
     },
     {
       "id": "kaoru",
       "name": "Kaoru Hakaze",
       "unit": "undead",
+      "agency": "rhythm-link",
       "image": "./images/characters/undead/kaoru.png"
     },
     {
       "id": "koga",
       "name": "Koga Oogami",
       "unit": "undead",
+      "agency": "rhythm-link",
       "image": "./images/characters/undead/koga.png"
     },
     {
       "id": "adonis",
       "name": "Adonis Otogari",
       "unit": "undead",
+      "agency": "rhythm-link",
       "image": "./images/characters/undead/adonis.png"
     },
      {
       "id": "keito",
       "name": "Keito Hasumi",
       "unit": "akatsuki",
+       "agency": "rhythm-link",
       "image": "./images/characters/akatsuki/keito.png"
     },
     {
       "id": "kuro",
       "name": "Kuro Kiryu",
       "unit": "akatsuki",
+      "agency": "rhythm-link",
       "image": "./images/characters/akatsuki/kuro.png"
     },
     {
       "id": "souma",
       "name": "Souma Kanzaki",
       "unit": "akatsuki",
+      "agency": "rhythm-link",
       "image": "./images/characters/akatsuki/souma.png"
     },
     {
       "id": "juis",
       "name": "Juis Kojika",
       "unit": "mellow-dear-us",
+      "agency": "rhythm-link",
       "image": "./images/characters/mellow-dear-us/juis.png"
     },
     {
       "id": "nozomi",
       "name": "Nozomi Madoka",
       "unit": "mellow-dear-us",
+      "agency": "rhythm-link",
       "image": "./images/characters/mellow-dear-us/nozomi.png"
     },
     {
       "id": "mashu",
       "name": "Mashu Kuon",
       "unit": "mellow-dear-us",
+      "agency": "rhythm-link",
       "image": "./images/characters/mellow-dear-us/mashu.png"
     },
     {
       "id": "chitose",
       "name": "Chitose Tsuzura",
       "unit": "mellow-dear-us",
+      "agency": "rhythm-link",
       "image": "./images/characters/mellow-dear-us/chitose.png"
     },
     {
       "id": "hiiro",
       "name": "Hiiro Amagi",
       "unit": "alkaloid",
+       "agency": "starmaker",
       "image": "./images/characters/alkaloid/hiiro.png"
     },
     {
       "id": "aira",
       "name": "Aira Shiratori",
       "unit": "alkaloid",
+       "agency": "starmaker",
       "image": "./images/characters/alkaloid/aira.png"
     },
     {
       "id": "mayoi",
       "name": "Mayoi Ayase",
       "unit": "alkaloid",
+       "agency": "starmaker",
       "image": "./images/characters/alkaloid/mayoi.png"
     },
     {
       "id": "tatsumi",
       "name": "Tatsumi Kazehaya",
       "unit": "alkaloid",
+       "agency": "starmaker",
       "image": "./images/characters/alkaloid/tatsumi.png"
     },
     {
       "id": "nagisa",
       "name": "Nagisa Ran",
       "unit": "eden",
+      "agency": "cosmic-production",
       "image": "./images/characters/eden/nagisa.png"
     },
     {
       "id": "hiyori",
       "name": "Hiyori Tomoe",
       "unit": "eden",
+      "agency": "cosmic-production",
       "image": "./images/characters/eden/hiyori.png"
     },
     {
       "id": "ibara",
       "name": "Ibara Saegusa",
       "unit": "eden",
+      "agency": "cosmic-production",
       "image": "./images/characters/eden/ibara.png"
     },
     {
       "id": "jun",
       "name": "Jun Sazanami",
       "unit": "eden",
+      "agency": "cosmic-production",
       "image": "./images/characters/eden/jun.png"
     }
   ],
