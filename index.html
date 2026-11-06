@@ -152,6 +152,76 @@
             grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 13px;
         }
+     /* Agency navigation */
+.agency-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 18px;
+}
+
+.agency-tab {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 20px;
+    padding: 9px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.agency-tab:hover {
+    border-color: var(--accent-dark);
+}
+
+.agency-tab.active {
+    background: var(--accent-dark);
+    color: #FFFFFF;
+    border-color: var(--accent-dark);
+}
+
+/* Current agency heading */
+.agency-heading {
+    margin: 0 0 16px;
+    font-size: 20px;
+    color: var(--text);
+}
+
+/* Clickable unit names */
+.unit-heading {
+    grid-column: 1 / -1;
+    justify-self: start;
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
+    color: var(--text);
+    border-radius: 14px;
+    padding: 5px 12px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.unit-heading:hover {
+    border-color: var(--accent-dark);
+}
+
+.unit-heading.selected {
+    background: var(--accent-dark);
+    color: #FFFFFF;
+    border-color: var(--accent-dark);
+}
+
+/* Characters belonging to each unit */
+.unit-characters {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-bottom: 8px;
+}
 
  .character-button {
     position: relative;
