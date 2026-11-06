@@ -558,6 +558,64 @@
         grid-template-columns: 1fr;
     }
 }
+              /* Homepage feature row responsive layout */
+        @media (max-width: 600px) {
+            .homepage-feature-row {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .latest-update,
+            .undead-quick-filters {
+                padding: 14px;
+            }
+
+            .undead-quick-grid {
+                gap: 4px;
+            }
+
+            .quick-character-button img,
+            .quick-character-button .character-placeholder {
+                width: 54px;
+                height: 54px;
+            }
+        }
+              /* Advanced search */
+        .advanced-search {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px 18px;
+            margin-top: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        .advanced-search summary {
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            color: var(--accent-dark);
+            list-style: none;
+        }
+
+        .advanced-search summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .advanced-search summary::after {
+            content: "+";
+            float: right;
+            font-size: 18px;
+        }
+
+        .advanced-search[open] summary::after {
+            content: "−";
+        }
+
+        .advanced-search-content {
+            padding-top: 18px;
+        }
         
 /* Story card grid */
 #story-list {
