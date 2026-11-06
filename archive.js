@@ -28,9 +28,7 @@ function makeElement(tag, className, text) {
 function renderCharacters() {
     characterGrid.replaceChildren();
 
-    const visibleCharacters = characters.filter(character => {
-        return !unitFilter.value || character.unit === unitFilter.value;
-    });
+    const visibleCharacters = characters;
 
     visibleCharacters.forEach(character => {
         const button = makeElement("button", "character-button");
@@ -107,8 +105,15 @@ function renderStories() {
 
         const matchesSearch = searchableText.includes(search);
 
-        const matchesUnit =
-            !unitFilter.value || story.unit === unitFilter.value;
+        const unitCharacters = unitFilter.value
+    ? characters
+        .filter(character => character.unit === unitFilter.value)
+        .map(character => character.id)
+    : [];
+
+const matchesUnit = unitCharacters.every(id =>
+    (story.characters || []).includes(id)
+);
 
         const matchesType =
             !typeFilter.value || story.type === typeFilter.value;
@@ -352,14 +357,8 @@ async function loadArchive() {
 searchInput.addEventListener("input", renderStoriesWithTransition);
 
 unitFilter.addEventListener("change", () => {
-    selectedCharacters = selectedCharacters.filter(id => {
-        const character = characters.find(item => item.id === id);
-        return character &&
-            (!unitFilter.value || character.unit === unitFilter.value);
-    });
-
     renderCharacters();
-   renderStoriesWithTransition();
+    renderStoriesWithTransition();
 });
 
 typeFilter.addEventListener("change", renderStoriesWithTransition);
