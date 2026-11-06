@@ -25,6 +25,24 @@
       "image": "./images/characters/undead/adonis.png"
     },
     {
+      "id": "keito",
+      "name": "Keito Hasumi",
+      "unit": "akatsuki",
+      "image": "./images/characters/akatsuki/keito.png"
+    },
+    {
+      "id": "kuro",
+      "name": "Kuro Kiryu",
+      "unit": "akatsuki",
+      "image": "./images/characters/akatsuki/kuro.png"
+    },
+    {
+      "id": "souma",
+      "name": "Souma Kanzaki",
+      "unit": "akatsuki",
+      "image": "./images/characters/akatsuki/souma.png"
+    },
+    {
       "id": "hiiro",
       "name": "Hiiro Amagi",
       "unit": "alkaloid",
