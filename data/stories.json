@@ -1,6 +1,4 @@
-
 {
-  
   "characters": [
     {
       "id": "rei",
@@ -74,18 +72,17 @@
       "unit": "eden",
       "image": "./images/characters/eden/jun.png"
     }
-    
   ],
   "stories": [
     {
-      "id": "test-story",
-      "title": "OISU Test Story",
+      "id": "velvet-ship",
+      "title": "Velvet Ship",
       "unit": "undead",
-      "type": "test",
-      "image": "./images/stories/test-story.png",
-      "characters": ["adonis", "kaoru"],
-      "description": "test",
-      "url": "./stories/undead/test-story.html"
+      "type": "event",
+      "image": "./images/stories/velvet-ship/velvet-ship.png",
+      "characters": ["kaoru", "rei", "adonis", "koga"],
+      "description": "UNDEAD decide to hold ES Fan ThanX Festival with a theme they are quite familiar with - Pirates. However, when Kaoru and the others reach the port town where the event is due to take place, they encounter a ghost ship and find themselves trapped within the town...",
+      "url": "./stories/velvet-ship/index.html"
     },
     {
       "id": "in-memoriam",
