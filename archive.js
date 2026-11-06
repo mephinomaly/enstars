@@ -36,6 +36,83 @@ function makeElement(tag, className, text) {
     return element;
 }
 
+function renderUndeadQuickFilters() {
+    undeadQuickGrid.replaceChildren();
+
+    const undeadCharacters = characters.filter(
+        character => character.unit === "undead"
+    );
+
+    undeadCharacters.forEach(character => {
+        const button = makeElement(
+            "button",
+            "quick-character-button"
+        );
+
+        button.type = "button";
+
+        button.classList.toggle(
+            "selected",
+            selectedCharacters.includes(character.id)
+        );
+
+        button.setAttribute(
+            "aria-pressed",
+            selectedCharacters.includes(character.id)
+        );
+
+        button.setAttribute(
+            "aria-label",
+            "Filter by " + character.name
+        );
+
+        const placeholder = makeElement(
+            "div",
+            "character-placeholder",
+            character.name.charAt(0)
+        );
+
+        if (character.image) {
+            const image = document.createElement("img");
+            image.src = character.image;
+            image.alt = character.name;
+            image.loading = "lazy";
+
+            image.addEventListener("error", () => {
+                image.replaceWith(placeholder);
+            });
+
+            button.appendChild(image);
+        } else {
+            button.appendChild(placeholder);
+        }
+
+        const name = makeElement(
+            "span",
+            "quick-character-name",
+            character.name
+        );
+
+        button.appendChild(name);
+
+        button.addEventListener("click", () => {
+            if (selectedCharacters.includes(character.id)) {
+                selectedCharacters = selectedCharacters.filter(
+                    id => id !== character.id
+                );
+            } else {
+                selectedCharacters.push(character.id);
+            }
+
+            renderUndeadQuickFilters();
+            renderCharacters();
+            renderStoriesWithTransition();
+        });
+
+        undeadQuickGrid.appendChild(button);
+    });
+}
+
 function renderCharacters() {
     characterGrid.replaceChildren();
     agencyTabs.replaceChildren();
