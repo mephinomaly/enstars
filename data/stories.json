@@ -134,7 +134,7 @@
       "image": "./images/characters/eden/jun.png"
     }
   ],
-  "stories": [
+   "stories": [
     {
       "id": "velvet-ship",
       "title": "Velvet Ship",
@@ -143,11 +143,13 @@
       "image": "./images/stories/velvet-ship/velvet-ship.png",
       "characters": ["kaoru", "rei", "adonis", "koga"],
       "description": "UNDEAD decide to hold ES Fan ThanX Festival with a theme they are quite familiar with - Pirates. However, when Kaoru and the others reach the port town where the event is due to take place, they encounter a ghost ship and find themselves trapped within the town...",
-     "latestChapter": {
-  "title": "Epilogue",
-  "url": "./stories/velvet-ship/epilogue.html",
-  "dateAdded": "2026-11-06"
-},
+      "url": "./stories/velvet-ship/index.html",
+      "latestChapter": {
+        "title": "Epilogue",
+        "url": "./stories/velvet-ship/epilogue.html",
+        "dateAdded": "2026-11-06"
+      }
+    },
     {
       "id": "in-memoriam",
       "title": "In Memoriam◆Handwriting, Chasing, Rambling",
@@ -156,11 +158,12 @@
       "image": "./images/stories/in-memoriam/in-memoriam.png",
       "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
       "description": "Koga is chosen to judge for a Middle School Band Contest. After seeing a band inspired by the legendary rock group “MARBLING”, Koga speaks passionately about his love for rock music when sudden news breaks...",
-     "latestChapter": {
-  "title": "Epilogue",
-  "url": "./stories/in-memoriam/epilogue.html",
-  "dateAdded": "2026-11-05"
-},
+      "url": "./stories/in-memoriam/index.html",
+      "latestChapter": {
+        "title": "Epilogue",
+        "url": "./stories/in-memoriam/epilogue.html",
+        "dateAdded": "2026-11-05"
+      }
     }
   ]
 }
