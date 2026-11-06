@@ -542,7 +542,8 @@ async function loadArchive() {
         stories = data.stories || [];
 
         renderCharacters();
-        renderStories();
+renderUndeadQuickFilters();
+renderStories();
 
     } catch (error) {
         console.error(error);
