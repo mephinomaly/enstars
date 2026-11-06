@@ -33,10 +33,15 @@ function renderCharacters() {
     visibleCharacters.forEach(character => {
         const button = makeElement("button", "character-button");
         button.type = "button";
-        button.classList.toggle(
-            "selected",
-            selectedCharacters.includes(character.id)
-        );
+       button.classList.toggle(
+    "selected",
+    selectedCharacters.includes(character.id)
+);
+
+button.classList.toggle(
+    "unit-selected",
+    unitFilter.value === character.unit
+);
         button.setAttribute(
             "aria-pressed",
             selectedCharacters.includes(character.id)
