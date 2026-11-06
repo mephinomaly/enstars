@@ -85,7 +85,7 @@ function renderCharacters() {
         const unitCharacters = agencyCharacters.filter(
             character => character.unit === unit
         );
-
+const unitSection = makeElement("div", "unit-section");
         // Clickable unit heading
         const allSelected = unitCharacters.every(character =>
             selectedCharacters.includes(character.id)
@@ -122,7 +122,7 @@ function renderCharacters() {
             renderStoriesWithTransition();
         });
 
-        characterGrid.appendChild(unitButton);
+      unitSection.appendChild(unitButton);
 
         // Character portraits
         const characterRow = makeElement("div", "unit-characters");
@@ -190,7 +190,8 @@ function renderCharacters() {
             characterRow.appendChild(button);
         });
 
-        characterGrid.appendChild(characterRow);
+      unitSection.appendChild(characterRow);
+characterGrid.appendChild(unitSection);
     });
 
     if (agencyCharacters.length === 0) {
