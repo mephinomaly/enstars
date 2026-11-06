@@ -24,7 +24,7 @@
       "unit": "undead",
       "image": "./images/characters/undead/adonis.png"
     },
-    {
+     {
       "id": "keito",
       "name": "Keito Hasumi",
       "unit": "akatsuki",
@@ -41,6 +41,30 @@
       "name": "Souma Kanzaki",
       "unit": "akatsuki",
       "image": "./images/characters/akatsuki/souma.png"
+    },
+    {
+      "id": "juis",
+      "name": "Juis Kojika",
+      "unit": "mellow-dear-us",
+      "image": "./images/characters/mellow-dear-us/juis.png"
+    },
+    {
+      "id": "nozomi",
+      "name": "Nozomi Madoka",
+      "unit": "mellow-dear-us",
+      "image": "./images/characters/mellow-dear-us/nozomi.png"
+    },
+    {
+      "id": "mashu",
+      "name": "Mashu Kuon",
+      "unit": "mellow-dear-us",
+      "image": "./images/characters/mellow-dear-us/mashu.png"
+    },
+    {
+      "id": "chitose",
+      "name": "Chitose Tsuzura",
+      "unit": "mellow-dear-us",
+      "image": "./images/characters/mellow-dear-us/chitose.png"
     },
     {
       "id": "hiiro",
