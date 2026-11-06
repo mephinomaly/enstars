@@ -8,6 +8,7 @@ const resultCount = document.getElementById("result-count");
 const agencyTabs = document.getElementById("agency-tabs");
 const agencyHeading = document.getElementById("agency-heading");
 const undeadQuickGrid = document.getElementById("undead-quick-grid");
+const latestUpdateContent = document.getElementById("latest-update-content");
 
 let characters = [];
 let stories = [];
@@ -112,7 +113,54 @@ function renderUndeadQuickFilters() {
         undeadQuickGrid.appendChild(button);
     });
 }
+function renderLatestUpdate() {
+    latestUpdateContent.replaceChildren();
 
+    const latestStory = stories
+        .filter(story => story.latestChapter && story.latestChapter.dateAdded)
+        .sort((a, b) =>
+            new Date(b.latestChapter.dateAdded) -
+            new Date(a.latestChapter.dateAdded)
+        )[0];
+
+    if (!latestStory) {
+        latestUpdateContent.textContent = "No updates available yet ♡";
+        return;
+    }
+
+    const storyTitle = makeElement(
+        "h4",
+        "latest-story-title",
+        latestStory.title
+    );
+
+    const chapterTitle = makeElement(
+        "p",
+        "latest-chapter-title",
+        latestStory.latestChapter.title
+    );
+
+    const characterNames = (latestStory.characters || [])
+        .map(id => characters.find(character => character.id === id))
+        .filter(Boolean)
+        .map(character => character.name);
+
+    const featuredCharacters = makeElement(
+        "p",
+        "latest-characters",
+        "Featuring: " + characterNames.join(", ")
+    );
+
+    const link = document.createElement("a");
+    link.className = "latest-link";
+    link.href = latestStory.latestChapter.url;
+    link.textContent = "View latest chapter →";
+
+    latestUpdateContent.appendChild(storyTitle);
+    latestUpdateContent.appendChild(chapterTitle);
+    latestUpdateContent.appendChild(featuredCharacters);
+    latestUpdateContent.appendChild(link);
+}
 function renderCharacters() {
     characterGrid.replaceChildren();
     agencyTabs.replaceChildren();
@@ -546,6 +594,7 @@ async function loadArchive() {
 
         renderCharacters();
 renderUndeadQuickFilters();
+renderLatestUpdate();
 renderStories();
 
     } catch (error) {
