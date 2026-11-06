@@ -478,6 +478,53 @@ body.page-leaving {
     object-fit: cover;
     display: block;
 }
+/* Homepage character selector */
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
+.character-button {
+    position: relative;
+    background: var(--surface-soft);
+    border: 3px solid var(--border);
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.character-button img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.character-button.selected {
+    background: #493F55;
+    border: 3px solid #493F55;
+    box-shadow: 0 0 0 3px #FFFFFF;
+}
+
+.character-button.selected::after {
+    content: "✓";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    color: #493F55;
+    border: 2px solid #493F55;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 
