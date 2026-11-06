@@ -55,10 +55,17 @@ function renderCharacters() {
         button.classList.toggle("active", item.id === currentAgency);
         button.setAttribute("aria-pressed", item.id === currentAgency);
 
-        button.addEventListener("click", () => {
-            currentAgency = item.id;
-            renderCharacters();
-        });
+       button.addEventListener("click", () => {
+    if (currentAgency === item.id) return;
+
+    characterGrid.classList.add("changing");
+
+    setTimeout(() => {
+        currentAgency = item.id;
+        renderCharacters();
+        characterGrid.classList.remove("changing");
+    }, 300);
+});
 
         agencyTabs.appendChild(button);
     });
