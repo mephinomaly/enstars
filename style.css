@@ -503,9 +503,10 @@ body.page-leaving {
     border-radius: 50%;
 }
 
+/* Characters selected individually */
 .character-button.selected {
     background: #493F55;
-    border: 3px solid #493F55;
+    border: 4px solid #493F55;
     box-shadow: 0 0 0 3px #FFFFFF;
 }
 
@@ -527,4 +528,28 @@ body.page-leaving {
     font-weight: bold;
 }
 
+/* Characters included through a unit selection */
+.character-button.unit-selected:not(.selected) {
+    background: #493F55;
+    border: 4px dashed #493F55;
+    box-shadow: 0 0 0 3px #FFFFFF;
+}
+
+.character-button.unit-selected:not(.selected)::after {
+    content: "U";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    color: #493F55;
+    border: 2px solid #493F55;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
 
