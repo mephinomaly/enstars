@@ -668,42 +668,76 @@ body.page-leaving {
         </label>
     </section>
 
-    <section class="section">
-        <div class="section-heading">FIND YOUR FAVOURITES ♡</div>
+    
+<section class="section">
+    <div class="section-heading">FIND YOUR FAVOURITES ♡</div>
 
-       <div id="agency-tabs" class="agency-tabs" aria-label="Choose an agency">
-</div>
+    <!-- Latest update and UNDEAD quick filters -->
+    <div class="homepage-feature-row">
 
-<h3 id="agency-heading" class="agency-heading"></h3>
-
-<div id="character-grid" class="character-grid">
-    <p>Loading characters...</p>
-</div>
-
-        <div class="filter-row">
-            <select id="unit-filter" aria-label="Filter by unit">
-                <option value="">All units</option>
-                <option value="undead">UNDEAD</option>
-                <option value="eden">Eden</option>
-                <option value="alkaloid">ALKALOID</option>
-             <option value="akatsuki">AKATSUKI</option>
-             <option value="mellow-dear-us">MELLOW DEAR US</option>
-            </select>
-
-            <select id="type-filter" aria-label="Filter by story type">
-                <option value="">All story types</option>
-                <option value="event">Event story</option>
-                <option value="scout">Scout story</option>
-                <option value="idol">Idol story</option>
-                <option value="main">Main story</option>
-                <option value="other">Other</option>
-            </select>
-
-            <button class="clear-button" id="clear-filters" type="button">
-                Clear filters
-            </button>
+        <div class="latest-update" id="latest-update">
+            <div class="feature-heading">LATEST UPDATE ♡</div>
+            <div id="latest-update-content">
+                <p>Loading latest update...</p>
+            </div>
         </div>
-    </section>
+
+        <div class="undead-quick-filters">
+            <div class="feature-heading">UNDEAD QUICK FILTERS</div>
+            <div id="undead-quick-grid" class="undead-quick-grid">
+                <p>Loading characters...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Advanced search -->
+    <details class="advanced-search">
+        <summary>ADVANCED SEARCH</summary>
+
+        <div class="advanced-search-content">
+
+            <h3>Browse characters by agency</h3>
+
+            <div id="agency-tabs" class="agency-tabs" aria-label="Choose an agency">
+            </div>
+
+            <h3 id="agency-heading" class="agency-heading"></h3>
+
+            <div id="character-grid" class="character-grid">
+                <p>Loading characters...</p>
+            </div>
+
+            <h3>Filter translations</h3>
+
+            <div class="filter-row">
+                <select id="unit-filter" aria-label="Filter by unit">
+                    <option value="">All units</option>
+                    <option value="undead">UNDEAD</option>
+                    <option value="eden">Eden</option>
+                    <option value="alkaloid">ALKALOID</option>
+                    <option value="akatsuki">AKATSUKI</option>
+                    <option value="mellow-dear-us">MELLOW DEAR US</option>
+                </select>
+
+                <select id="type-filter" aria-label="Filter by story type">
+                    <option value="">All story types</option>
+                    <option value="event">Event story</option>
+                    <option value="scout">Scout story</option>
+                    <option value="idol">Idol story</option>
+                    <option value="main">Main story</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button class="clear-button" id="clear-filters" type="button">
+                    Clear filters
+                </button>
+            </div>
+
+        </div>
+    </details>
+</section>
+
 
     <section class="section">
         <div class="archive-heading">
