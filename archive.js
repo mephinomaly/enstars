@@ -7,6 +7,7 @@ const typeFilter = document.getElementById("type-filter");
 const resultCount = document.getElementById("result-count");
 const agencyTabs = document.getElementById("agency-tabs");
 const agencyHeading = document.getElementById("agency-heading");
+const undeadQuickGrid = document.getElementById("undead-quick-grid");
 
 let characters = [];
 let stories = [];
