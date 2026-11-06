@@ -37,68 +37,167 @@ function makeElement(tag, className, text) {
 
 function renderCharacters() {
     characterGrid.replaceChildren();
+    agencyTabs.replaceChildren();
 
-    const visibleCharacters = characters;
+    const agency = agencies.find(item => item.id === currentAgency);
 
-    visibleCharacters.forEach(character => {
-        const button = makeElement("button", "character-button");
+    agencyHeading.textContent = agency ? agency.name : "";
+
+    // Create the agency navigation buttons
+    agencies.forEach(item => {
+        const button = makeElement(
+            "button",
+            "agency-tab",
+            item.name
+        );
+
         button.type = "button";
-       button.classList.toggle(
-    "selected",
-    selectedCharacters.includes(character.id)
-);
-
-button.classList.toggle(
-    "unit-selected",
-    unitFilter.value === character.unit
-);
-        button.setAttribute(
-            "aria-pressed",
-            selectedCharacters.includes(character.id)
-        );
-        button.setAttribute(
-            "aria-label",
-            "Filter by " + character.name
-        );
-
-        const placeholder = makeElement(
-            "div",
-            "character-placeholder",
-            character.name.charAt(0)
-        );
-
-        if (character.image) {
-            const image = document.createElement("img");
-            image.src = character.image;
-            image.alt = character.name;
-            image.loading = "lazy";
-
-            image.addEventListener("error", () => {
-                image.replaceWith(placeholder);
-            });
-
-            button.appendChild(image);
-        } else {
-            button.appendChild(placeholder);
-        }
-
-     button.title = character.name;
+        button.classList.toggle("active", item.id === currentAgency);
+        button.setAttribute("aria-pressed", item.id === currentAgency);
 
         button.addEventListener("click", () => {
-            if (selectedCharacters.includes(character.id)) {
-                selectedCharacters = selectedCharacters.filter(
-                    id => id !== character.id
-                );
-            } else {
-                selectedCharacters.push(character.id);
-            }
-
-          renderCharacters();
-renderStoriesWithTransition();
+            currentAgency = item.id;
+            renderCharacters();
         });
 
-        characterGrid.appendChild(button);
+        agencyTabs.appendChild(button);
     });
+
+    // Get characters belonging to the selected agency
+    const agencyCharacters = characters.filter(
+        character => character.agency === currentAgency
+    );
+
+    // Group characters by unit
+    const units = [...new Set(
+        agencyCharacters.map(character => character.unit)
+    )];
+
+    const unitNames = {
+        undead: "UNDEAD",
+        eden: "Eden",
+        alkaloid: "ALKALOID",
+        akatsuki: "AKATSUKI",
+        "mellow-dear-us": "MELLOW DEAR US"
+    };
+
+    units.forEach(unit => {
+        const unitCharacters = agencyCharacters.filter(
+            character => character.unit === unit
+        );
+
+        // Clickable unit heading
+        const allSelected = unitCharacters.every(character =>
+            selectedCharacters.includes(character.id)
+        );
+
+        const unitButton = makeElement(
+            "button",
+            "unit-heading",
+            unitNames[unit] || unit
+        );
+
+        unitButton.type = "button";
+        unitButton.classList.toggle("selected", allSelected);
+        unitButton.setAttribute("aria-pressed", allSelected);
+
+        unitButton.addEventListener("click", () => {
+            if (unitCharacters.every(character =>
+                selectedCharacters.includes(character.id)
+            )) {
+                selectedCharacters = selectedCharacters.filter(
+                    id => !unitCharacters.some(character =>
+                        character.id === id
+                    )
+                );
+            } else {
+                unitCharacters.forEach(character => {
+                    if (!selectedCharacters.includes(character.id)) {
+                        selectedCharacters.push(character.id);
+                    }
+                });
+            }
+
+            renderCharacters();
+            renderStoriesWithTransition();
+        });
+
+        characterGrid.appendChild(unitButton);
+
+        // Character portraits
+        const characterRow = makeElement("div", "unit-characters");
+
+        unitCharacters.forEach(character => {
+            const button = makeElement("button", "character-button");
+            button.type = "button";
+
+            button.classList.toggle(
+                "selected",
+                selectedCharacters.includes(character.id)
+            );
+
+            button.classList.toggle(
+                "unit-selected",
+                unitFilter.value === character.unit
+            );
+
+            button.setAttribute(
+                "aria-pressed",
+                selectedCharacters.includes(character.id)
+            );
+
+            button.setAttribute(
+                "aria-label",
+                "Filter by " + character.name
+            );
+
+            const placeholder = makeElement(
+                "div",
+                "character-placeholder",
+                character.name.charAt(0)
+            );
+
+            if (character.image) {
+                const image = document.createElement("img");
+                image.src = character.image;
+                image.alt = character.name;
+                image.loading = "lazy";
+
+                image.addEventListener("error", () => {
+                    image.replaceWith(placeholder);
+                });
+
+                button.appendChild(image);
+            } else {
+                button.appendChild(placeholder);
+            }
+
+            button.title = character.name;
+
+            button.addEventListener("click", () => {
+                if (selectedCharacters.includes(character.id)) {
+                    selectedCharacters = selectedCharacters.filter(
+                        id => id !== character.id
+                    );
+                } else {
+                    selectedCharacters.push(character.id);
+                }
+
+                renderCharacters();
+                renderStoriesWithTransition();
+            });
+
+            characterRow.appendChild(button);
+        });
+
+        characterGrid.appendChild(characterRow);
+    });
+
+    if (agencyCharacters.length === 0) {
+        characterGrid.appendChild(
+            makeElement("p", "empty-state", "No characters added yet ♡")
+        );
+    }
 }
 
 
