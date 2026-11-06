@@ -5,10 +5,20 @@ const searchInput = document.getElementById("search");
 const unitFilter = document.getElementById("unit-filter");
 const typeFilter = document.getElementById("type-filter");
 const resultCount = document.getElementById("result-count");
+const agencyTabs = document.getElementById("agency-tabs");
+const agencyHeading = document.getElementById("agency-heading");
 
 let characters = [];
 let stories = [];
 let selectedCharacters = [];
+let currentAgency = "starmaker";
+
+const agencies = [
+    { id: "starmaker", name: "StarMaker Production" },
+    { id: "cosmic-production", name: "Cosmic Production" },
+    { id: "rhythm-link", name: "Rhythm Link" },
+    { id: "new-dimension", name: "New Dimension" }
+];
 
 const unitNames = {
     undead: "UNDEAD",
