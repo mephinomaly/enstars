@@ -193,5 +193,18 @@
         "dateAdded": "2026-11-05"
       }
     }
+     
+    {
+      "id": "rei-birthday-2026",
+      "title": "Rei Sakuma Birthday Livestream",
+      "unit": "undead",
+      "type": "other",
+      "image": "./images/stories/birthdays/rei2026/rei-birthday-chapter-1.jpg",
+      "characters": ["rei", "kaoru", "wataru"],
+      "description": "A special birthday livestream celebrating Rei Sakuma, joined by his friends Kaoru Hakaze and Wataru Hibiki.",
+           "url": "./stories/birthdays/rei2026/index.html",
+      "dateAdded": "2026-11-07"
+    }
+
   ]
 }
