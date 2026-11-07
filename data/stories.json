@@ -106,6 +106,34 @@
       "image": "./images/characters/alkaloid/tatsumi.png"
     },
     {
+  "id": "eichi",
+  "name": "Eichi Tenshouin",
+  "unit": "fine",
+  "agency": "starmaker",
+  "image": "./images/characters/fine/eichi.png"
+},
+{
+  "id": "wataru",
+  "name": "Wataru Hibiki",
+  "unit": "fine",
+  "agency": "starmaker",
+  "image": "./images/characters/fine/wataru.png"
+},
+{
+  "id": "tori",
+  "name": "Tori Himemiya",
+  "unit": "fine",
+  "agency": "starmaker",
+  "image": "./images/characters/fine/tori.png"
+},
+{
+  "id": "yuzuru",
+  "name": "Yuzuru Fushimi",
+  "unit": "fine",
+  "agency": "starmaker",
+  "image": "./images/characters/fine/yuzuru.png"
+}
+    {
       "id": "nagisa",
       "name": "Nagisa Ran",
       "unit": "eden",
