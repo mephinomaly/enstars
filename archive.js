@@ -16,10 +16,10 @@ let selectedCharacters = [];
 let currentAgency = "starmaker";
 
 const agencies = [
-    { id: "starmaker", name: "StarMaker Production" },
-    { id: "cosmic-production", name: "Cosmic Production" },
+    { id: "starmaker", name: "STARMAKER PRODUCTION" },
+    { id: "cosmic-production", name: "COSMIC PRODUCTION" },
     { id: "rhythm-link", name: "Rhythm Link" },
-    { id: "new-dimension", name: "New Dimension" }
+    { id: "new-dimension", name: "NEW DIMENSION" }
 ];
 
 const unitNames = {
