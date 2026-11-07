@@ -600,3 +600,18 @@ body.page-leaving {
     --os-toolbar-icon-color: #F4EFFA;
     --os-identifier-color: #E5D5F5;
 }
+/* OISU bottom toolbar dark mode */
+:root[data-theme="dark"] .oissu__embed .os-toolbar.bottom {
+    background-color: #292331 !important;
+    color: #F4EFFA !important;
+    border-color: #554762 !important;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-toolbar.bottom a {
+    color: #E5D5F5 !important;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-toolbar.bottom a:hover {
+    color: #FFFFFF !important;
+    background-color: #554762 !important;
+}
