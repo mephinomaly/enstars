@@ -262,7 +262,17 @@
         </aside>
     </div>
     </main>
+<script>
+    const themeToggle = document.getElementById("themeToggle");
 
+    themeToggle.addEventListener("click", () => {
+        const currentTheme = document.documentElement.dataset.theme || "light";
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        document.documentElement.dataset.theme = newTheme;
+        localStorage.setItem("archive-theme", newTheme);
+    });
+</script>
     <script src="../../card-gallery.js"></script>
     <script src="../../page-transition.js"></script>
 </body>
