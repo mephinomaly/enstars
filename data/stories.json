@@ -216,7 +216,7 @@
   "unit": "undead",
   "type": "other",
   "image": "./images/stories/birthdays/kaoru2026/kaoru-birthday-chapter-1.png",
-  "characters": ["kaoru"],
+  "characters": ["kaoru", "koga", "juis"],
   "description": "Kaoru Hakaze's 2026 birthday campaign.",
   "url": "./stories/birthdays/kaoru2026/index.html",
        "dateAdded": "2026-11-07"
