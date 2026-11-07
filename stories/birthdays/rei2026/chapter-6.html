@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Livestream | Rei Sakuma Birthday Livestream</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <a class="back-link" href="index.html">← Back to birthday page</a>
+
+        <div class="birthday-title">
+            <h1>Rei Sakuma Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+            <h2>Birthday Livestream</h2>
+
+            <div class="oissu">
+                <figure>
+                    <img
+                        src="../../../images/stories/birthdays/rei2026/rei-birthday-chapter-6.png"
+                        alt="Birthday Livestream illustration"
+                    >
+                </figure>
+
+                <p>
+                    <b>Rei:</b> Now then, it is nearly time for us to part ways. Thank you for staying with me until the very end.
+                </p>
+
+                <p>
+                    Looking back on the past, reminiscing about the paths I've walked alongside my friends... A birthday truly is a wonderful opportunity to reflect on oneself.
+                </p>
+
+                <p>
+                    Though I may feel that I have changed, perhaps there are parts of me that have remained the same all along, at least in the eyes of my friends.
+                </p>
+
+                <p>
+                    Even as I continue to change, I hope to embrace the future without fear and enjoy all the beautiful sights yet to be seen, together with all of you. ♪
+                </p>
+
+                <p>
+                    Let us share another conversation like this someday. Until we meet again, take good care of yourselves...♪
+                </p>
+            </div>
+        </section>
+
+        <nav class="chapter-navigation">
+            <a href="chapter-5.html">← Previous chapter</a>
+            <a href="index.html">Back to birthday page →</a>
+        </nav>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
