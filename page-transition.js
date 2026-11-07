@@ -13,8 +13,9 @@ document.addEventListener("click", event => {
     );
 
     if (
-        !link ||
-        event.defaultPrevented ||
+    !link ||
+    !link.hasAttribute("href") ||
+    event.defaultPrevented ||
         event.button !== 0 ||
         link.target === "_blank" ||
         link.hasAttribute("download") ||
