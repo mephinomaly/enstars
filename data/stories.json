@@ -207,9 +207,20 @@
       "latestChapter": {
         "title": "Birthday Livestream",
         "url": "./stories/birthdays/rei2026/chapter-6.html",
-        "dateAdded": "2026-11-07"
+        "dateAdded": "2026-11-06"
       }
-    }
+    },
+     {
+  "id": "kaoru-birthday-2026",
+  "title": "Kaoru Hakaze Birthday Livestream",
+  "unit": "undead",
+  "type": "other",
+  "image": "./images/stories/birthdays/kaoru2026/kaoru-birthday-chapter-1.png",
+  "characters": ["kaoru"],
+  "description": "A special birthday livestream celebrating Kaoru Hakaze.",
+  "url": "./stories/birthdays/kaoru2026/index.html"
+       "dateAdded": "2026-11-07"
+}
 
   ]
 }
