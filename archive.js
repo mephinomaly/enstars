@@ -220,9 +220,20 @@ function renderCharacters() {
     );
 
     // Group characters by unit
-    const units = [...new Set(
-        agencyCharacters.map(character => character.unit)
-    )];
+   const units = [...new Set(
+    agencyCharacters.map(character => character.unit)
+)];
+
+const unitOrder = [
+    "undead",
+    "eden",
+    "fine",
+    "alkaloid",
+    "akatsuki",
+    "mellow-dear-us"
+];
+
+units.sort((a, b) => unitOrder.indexOf(a) - unitOrder.indexOf(b));
 
     const unitNames = {
         undead: "UNDEAD",
