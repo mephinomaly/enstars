@@ -569,4 +569,35 @@ body.page-leaving {
     font-size: 12px;
     font-weight: bold;
 }
+/* OISU dark mode */
+:root[data-theme="dark"] .oissu__embed .oissu {
+    background-color: #211D29 !important;
+    color: #F4EFFA !important;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-content.os-lines {
+    background-color: #352D40 !important;
+    color: #F4EFFA !important;
+    padding: 12px 14px;
+    border-radius: 10px;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-content.os-lines p {
+    color: #F4EFFA !important;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-toolbar.top {
+    background-color: #292331 !important;
+    color: #F4EFFA !important;
+    border-color: #554762 !important;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-toolbar.top a {
+    color: #E5D5F5 !important;
+}
+
+:root[data-theme="dark"] .oissu__embed .os-toolbar.top a:hover {
+    color: #FFFFFF !important;
+    background-color: #554762 !important;
+}
 
