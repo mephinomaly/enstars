@@ -615,3 +615,12 @@ body.page-leaving {
     color: #FFFFFF !important;
     background-color: #554762 !important;
 }
+/* Theme toggle button */
+.theme-button {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 50px;
+    padding: 8px 13px;
+    cursor: pointer;
+}
