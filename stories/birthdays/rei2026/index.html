@@ -72,6 +72,49 @@
 .birthday-chapter-buttons a:hover {
     background: var(--text);
 }
+        .birthday-content-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 24px;
+    align-items: start;
+    margin: 40px 0;
+}
+
+.birthday-content-layout .chapters {
+    margin: 0;
+}
+
+.birthday-profile {
+    padding: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.birthday-profile h2 {
+    margin-top: 0;
+    color: var(--accent-dark);
+}
+
+.birthday-profile-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.birthday-profile p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .birthday-content-layout {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 
@@ -114,8 +157,8 @@
 
            </section>
 
-      <section class="chapters">
-
+     <div class="birthday-content-layout">
+    <section class="chapters">
     <div class="chapter-group">
         <h3>Birthday Livestream Preparations</h3>
 
@@ -168,7 +211,26 @@
     </div>
 
 </section>
+<aside class="birthday-profile">
+    <h2>Character Profile ✧</h2>
 
+    <img
+        class="birthday-profile-image"
+        src="../../../images/characters/undead/rei-chara-bday.png"
+        alt="Rei Sakuma"
+    >
+
+    <h3>Rei Sakuma</h3>
+    <p><strong>Unit:</strong> UNDEAD</p>
+    <p><strong>Agency:</strong> Rhythm Link</p>
+    <p><strong>Birthday:</strong> 2 November</p>
+
+    <h3>Featured Characters</h3>
+    <p>Rei Sakuma, Kaoru Hakaze and Wataru Hibiki</p>
+
+    <p><em>A special birthday livestream celebrating Rei!</em></p>
+</aside>
+</div>
     </main>
 
     <script src="../../../main.js"></script>
