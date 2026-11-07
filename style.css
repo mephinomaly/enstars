@@ -45,6 +45,10 @@ body {
     padding: 18px 0;
     border-bottom: 1px solid var(--border);
     background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .brand {
