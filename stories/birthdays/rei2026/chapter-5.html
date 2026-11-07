@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Livestream | Rei Sakuma Birthday Livestream</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <a class="back-link" href="index.html">← Back to birthday page</a>
+
+        <div class="birthday-title">
+            <h1>Rei Sakuma Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+            <h2>Birthday Livestream</h2>
+
+            <div class="oissu">
+                <figure>
+                    <img
+                        src="../../../images/stories/birthdays/rei2026/rei-birthday-chapter-5.png"
+                        alt="Birthday Livestream illustration"
+                    >
+                </figure>
+
+                <p>
+                    <b>Kaoru:</b> Excuse me~♪ Ooh, looks like everyone's having a good time! Are you enjoying yourself, Rei-kun?
+                </p>
+
+                <p>
+                    <b>Rei:</b> Of course. Being able to spend time speaking with everyone like this truly makes for a wonderful birthday.
+                </p>
+
+                <p>
+                    <b>Kaoru:</b> I'm glad to hear it. Ah, here's a comment! “What do you think of Rei-kun?”
+                </p>
+
+                <p>
+                    <b>Rei:</b> I am rather curious about that myself. What do you think of me, Kaoru-kun?
+                </p>
+
+                <p>
+                    <b>Kaoru:</b> Hmm, let's see... You're reliable, but you can be a bit of a busybody sometimes, I guess?
+                </p>
+
+                <p>
+                    <b>Rei:</b> Is that a compliment? Well, I suppose I don't mind it...♪
+                </p>
+            </div>
+        </section>
+
+        <nav class="chapter-navigation">
+            <a href="chapter-4.html">← Previous chapter</a>
+            <a href="chapter-6.html">Next chapter →</a>
+        </nav>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
