@@ -217,7 +217,7 @@ body.page-leaving {
 
 .story-credits p {
     margin: 4px 0;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     color: var(--text);
 }
