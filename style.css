@@ -600,4 +600,13 @@ body.page-leaving {
     color: #FFFFFF !important;
     background-color: #554762 !important;
 }
+/* OISU dark mode - dialogue text fix */
+:root[data-theme="dark"] .oissu__embed .os-content.os-lines,
+:root[data-theme="dark"] .oissu__embed .os-content.os-lines p {
+    background-color: #352D40 !important;
+    color: #F4EFFA !important;
+}
 
+:root[data-theme="dark"] .oissu__embed .os-content.os-lines * {
+    color: #F4EFFA !important;
+}
