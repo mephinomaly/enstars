@@ -128,6 +128,9 @@ function renderLatestUpdate() {
         return;
     }
 
+    const layout = makeElement("div", "latest-update-layout");
+    const textContent = makeElement("div", "latest-update-text");
+
     const storyTitle = makeElement(
         "h4",
         "latest-story-title",
@@ -156,10 +159,25 @@ function renderLatestUpdate() {
     link.href = latestStory.latestChapter.url;
     link.textContent = "View latest chapter →";
 
-    latestUpdateContent.appendChild(storyTitle);
-    latestUpdateContent.appendChild(chapterTitle);
-    latestUpdateContent.appendChild(featuredCharacters);
-    latestUpdateContent.appendChild(link);
+    const cover = document.createElement("img");
+    cover.className = "latest-update-image";
+    cover.src = latestStory.image;
+    cover.alt = latestStory.title + " cover";
+    cover.loading = "lazy";
+
+    cover.addEventListener("error", () => {
+        cover.remove();
+    });
+
+    textContent.appendChild(storyTitle);
+    textContent.appendChild(chapterTitle);
+    textContent.appendChild(featuredCharacters);
+    textContent.appendChild(link);
+
+    layout.appendChild(textContent);
+    layout.appendChild(cover);
+
+    latestUpdateContent.appendChild(layout);
 }
 function renderCharacters() {
     characterGrid.replaceChildren();
