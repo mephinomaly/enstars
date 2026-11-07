@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Livestream | Rei Sakuma Birthday Livestream</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <a class="back-link" href="index.html">← Back to birthday page</a>
+
+        <div class="birthday-title">
+            <h1>Rei Sakuma Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+            <h2>Birthday Livestream</h2>
+
+            <div class="oissu">
+                <figure>
+                    <img
+                        src="../../../images/stories/birthdays/rei2026/rei-birthday-chapter-4.png"
+                        alt="Birthday Livestream illustration"
+                    >
+                </figure>
+
+                <p>
+                    <b>Wataru:</b> Happy birthday! Today, I shall grant one of Rei's wishes! ☆
+                </p>
+
+                <p>
+                    <b>Rei:</b> Then, perhaps you could refrain from performing any magic tricks? I would much rather enjoy a leisurely conversation with you.
+                </p>
+
+                <p>
+                    <b>Wataru:</b> Oh my! To think you'd ask me to hold back my Amazing! Why, that's like asking an actor to perform on a stage without an audience to applaud them!
+                </p>
+
+                <p>
+                    <b>Rei:</b> Kukuku. Even without any surprises, there are still so many things I'd like to talk about with you.
+                </p>
+
+                <p>
+                    <b>Wataru:</b> Fufufu, very well! For this evening, Hibiki Wataru shall simply be your good old friend...♪
+                </p>
+
+                <p>
+                    <b>Rei:</b> Excellent. Since we have this opportunity, shall we reminisce about days gone by?
+                </p>
+            </div>
+        </section>
+
+        <nav class="chapter-navigation">
+            <a href="chapter-3.html">← Previous chapter</a>
+            <a href="chapter-5.html">Next chapter →</a>
+        </nav>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
