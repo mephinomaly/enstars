@@ -590,3 +590,13 @@ body.page-leaving {
     color: #FFFFFF !important;
     background-color: #554762 !important;
 }
+/* OISU dark mode colours */
+:root[data-theme="dark"] .oissu__embed {
+    --os-text-color: #F4EFFA;
+    --os-bubble-color: #352D40;
+    --os-background-color: #211D29;
+    --os-background-secondary-color: #292331;
+    --os-border-color: #554762;
+    --os-toolbar-icon-color: #F4EFFA;
+    --os-identifier-color: #E5D5F5;
+}
