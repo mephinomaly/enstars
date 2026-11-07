@@ -54,11 +54,11 @@ body {
 }
 
 .brand {
-    margin-left: max(18px, calc((100% - 920px) / 2));
-    color: var(--accent-dark);
+    font-size: 14px;
     font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--accent-dark);
     text-decoration: none;
-    letter-spacing: 1px;
 }
 
 .story-hero {
