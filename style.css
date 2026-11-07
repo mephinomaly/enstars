@@ -208,6 +208,23 @@ body.page-leaving {
     letter-spacing: 0.5px;
     text-align: center;
 }
+.story-credits {
+    padding: 10px 12px;
+    background: var(--surface-soft);
+    border-radius: 10px;
+    margin: 8px 0 16px;
+}
+
+.story-credits p {
+    margin: 4px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.story-credits strong {
+    color: var(--accent-dark);
+}
 
 /* In Memoriam two-column layout */
 .story-layout {
