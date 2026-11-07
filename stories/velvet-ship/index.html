@@ -263,7 +263,16 @@
     </div>
     </main>
 <script>
-    const themeToggle = document.getElementById("themeToggle");
+    const themeToggle = document.getElementById("theme-toggle");
+
+    function updateThemeButton() {
+        const currentTheme = document.documentElement.dataset.theme || "light";
+        themeToggle.textContent = currentTheme === "dark"
+            ? "☀ Light mode"
+            : "☾ Dark mode";
+    }
+
+    updateThemeButton();
 
     themeToggle.addEventListener("click", () => {
         const currentTheme = document.documentElement.dataset.theme || "light";
@@ -271,6 +280,8 @@
 
         document.documentElement.dataset.theme = newTheme;
         localStorage.setItem("archive-theme", newTheme);
+
+        updateThemeButton();
     });
 </script>
     <script src="../../card-gallery.js"></script>
