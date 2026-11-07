@@ -257,6 +257,39 @@
 
     </main>
     <script src="../../card-gallery.js"></script>
+    <script>
+    const directoryScrollKey = "in-memoriam-directory-scroll";
+    const directoryPath = window.location.pathname.replace(/index\.html$/, "");
+
+    // Remember the scroll position when opening a chapter
+    document.addEventListener("click", event => {
+        const link = event.composedPath().find(
+            element => element instanceof HTMLAnchorElement
+        );
+
+        if (!link || !link.href) return;
+
+        const destination = new URL(link.href, window.location.href);
+
+        if (
+            destination.origin === window.location.origin &&
+            destination.pathname.startsWith(directoryPath) &&
+            !destination.pathname.endsWith("index.html")
+        ) {
+            sessionStorage.setItem(directoryScrollKey, window.scrollY);
+        }
+    }, true);
+
+    // Restore the scroll position when returning to the directory
+    const savedScroll = sessionStorage.getItem(directoryScrollKey);
+
+    if (savedScroll !== null) {
+        requestAnimationFrame(() => {
+            window.scrollTo(0, Number(savedScroll));
+            sessionStorage.removeItem(directoryScrollKey);
+        });
+    }
+</script>
     <script src="../../page-transition.js"></script>
 </body>
 </html>
