@@ -2,10 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("page-ready");
 });
 
+window.addEventListener("pageshow", () => {
+    document.body.classList.remove("page-leaving");
+    document.body.classList.add("page-ready");
+});
+
 document.addEventListener("click", event => {
     const link = event.composedPath().find(
-    element => element instanceof HTMLAnchorElement
-);
+        element => element instanceof HTMLAnchorElement
+    );
 
     if (
         !link ||
