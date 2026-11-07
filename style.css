@@ -629,4 +629,7 @@ body.page-leaving {
     border-radius: 50px;
     padding: 8px 13px;
     cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
 }
