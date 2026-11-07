@@ -229,6 +229,7 @@ function renderCharacters() {
         eden: "Eden",
         alkaloid: "ALKALOID",
         akatsuki: "AKATSUKI",
+        fine: "fine",
         "mellow-dear-us": "MELLOW DEAR US"
     };
 
