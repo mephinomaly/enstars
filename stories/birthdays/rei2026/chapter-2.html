@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Livestream Preparations | Rei Sakuma Birthday Livestream</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+
+        .birthday-chapter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 28px 0;
+        }
+
+        .birthday-chapter-buttons a {
+            display: inline-block;
+            padding: 11px 22px;
+            background: var(--accent-dark);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .birthday-chapter-buttons a:hover {
+            background: var(--text);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <a class="back-link" href="index.html">← Back to birthday page</a>
+
+        <div class="birthday-title">
+            <h1>Rei Sakuma Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+            <h2>Birthday Livestream Preparations</h2>
+
+            <div class="oissu">
+                <figure>
+                    <img
+                        src="../../../images/stories/birthdays/rei2026/rei-birthday-chapter-2.png"
+                        alt="Birthday Livestream Preparations illustration"
+                    >
+                </figure>
+
+                <p>
+                    <b>Wataru:</b> Come now, let us dim the lights even further! Having our star emerge from the darkness would make for such a wonderful surprise! ☆
+                </p>
+
+                <p>
+                    <b>Kaoru:</b> Whoa, hold on. It'd be a problem if we couldn't see Rei-kun's face during his birthday livestream.
+                </p>
+
+                <p>
+                    <b>Rei:</b> But more importantly, what is it that you two intend to discuss with me?
+                </p>
+
+                <p>
+                    <b>Wataru:</b> Oh my, wouldn't that spoil all the fun if we told you beforehand? You'll just have to wait until the livestream to find out...☆
+                </p>
+
+                <p>
+                    <b>Kaoru:</b> I'll just keep things casual. We could talk about our memories with the unit, and maybe I'll read some of the comments, too.
+                </p>
+
+                <p>
+                    <b>Rei:</b> Very well, I understand. I shall leave tonight in your capable hands, you two. ♪
+                </p>
+            </div>
+        </section>
+
+        <div class="birthday-chapter-buttons">
+            <a href="index.html">← Back to birthday page</a>
+        </div>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
