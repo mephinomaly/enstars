@@ -16,9 +16,14 @@
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <header class="topbar">
+   <header class="topbar">
+    <div class="container topbar-inner">
         <a class="brand" href="../../index.html">MEPHINOMALY ☾</a>
-    </header>
+        <button class="theme-button" id="theme-toggle" type="button">
+            ☾ Dark mode
+        </button>
+    </div>
+</header>
 
     <main class="container">
         <article class="chapter-page">
@@ -327,5 +332,27 @@ Gah, haa—
 
     <script src="../../main.js"></script>
     <script src="../../page-transition.js"></script>
+    <script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    function updateThemeButton() {
+        const currentTheme = document.documentElement.dataset.theme || "light";
+        themeToggle.textContent = currentTheme === "dark"
+            ? "☀ Light mode"
+            : "☾ Dark mode";
+    }
+
+    updateThemeButton();
+
+    themeToggle.addEventListener("click", () => {
+        const currentTheme = document.documentElement.dataset.theme || "light";
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        document.documentElement.dataset.theme = newTheme;
+        localStorage.setItem("archive-theme", newTheme);
+
+        updateThemeButton();
+    });
+</script>
 </body>
 </html>
