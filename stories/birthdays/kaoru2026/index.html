@@ -1,1 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaoru Hakaze Birthday Livestream | MEPHINOMALY</title>
 
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-cover {
+            width: 100%;
+            max-height: 360px;
+            object-fit: contain;
+            border-radius: 14px;
+            margin-bottom: 30px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+
+        .birthday-chapter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 28px 0;
+        }
+
+        .birthday-chapter-buttons a {
+            display: inline-block;
+            padding: 11px 22px;
+            background: var(--accent-dark);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .birthday-chapter-buttons a:hover {
+            background: var(--text);
+        }
+
+        .birthday-content-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 280px;
+            gap: 24px;
+            align-items: start;
+            margin: 40px 0;
+        }
+
+        .birthday-content-layout .chapters {
+            margin: 0;
+        }
+
+        .birthday-profile {
+            padding: 24px;
+            background: var(--surface-soft);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-profile h2 {
+            margin-top: 0;
+            color: var(--accent-dark);
+        }
+
+        .birthday-profile-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+
+        .birthday-profile p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 700px) {
+            .birthday-content-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .birthday-profile .story-characters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .birthday-profile .story-characters img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <div class="birthday-title">
+            <h1>Kaoru Hakaze Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+
+           <div class="oissu">
+    <figure>
+        <img
+            src="../../../images/stories/birthdays/kaoru2026/kaoru-birthday-chapter-1.png"
+            alt="Chapter 1 illustration"
+        >
+    </figure>
+
+    <p>
+        <b>Kaoru:</b> Thank you for celebrating with me again this year! ♪ I always have fun spending time with everyone, but just for today, I can't help wishing I could spend some time with just you…
+    </p>
+</div>
+
+        </section>
+
+        <div class="birthday-content-layout">
+
+            <section class="chapters">
+
+                <div class="chapter-group">
+                    <h3>Birthday Livestream Preparations</h3>
+
+                    <a href="chapter-2.html">
+                        <span>Chapter 1</span>
+                        <div class="chapter-characters">
+                            <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="chapter-group">
+                    <h3>Birthday Livestream Start</h3>
+
+                    <a href="chapter-3.html">
+                        <span>Chapter 1</span>
+                        <div class="chapter-characters">
+                            <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="chapter-group">
+                    <h3>Birthday Livestream</h3>
+
+                    <a href="chapter-4.html">
+                        <span>Chapter 1</span>
+                        <div class="chapter-characters">
+                            <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru">
+                        </div>
+                    </a>
+
+                    <a href="chapter-5.html">
+                        <span>Chapter 2</span>
+                        <div class="chapter-characters">
+                            <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru">
+                        </div>
+                    </a>
+
+                    <a href="chapter-6.html">
+                        <span>Chapter 3</span>
+                        <div class="chapter-characters">
+                            <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru">
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <aside class="birthday-profile">
+
+                <h2>Character Profile ✧</h2>
+
+                <img
+                    class="birthday-profile-image"
+                    src="../../../images/characters/undead/kaoru.png"
+                    alt="Kaoru Hakaze"
+                >
+
+                <h3>Kaoru Hakaze</h3>
+                <p><strong>Unit:</strong> UNDEAD</p>
+                <p><strong>Agency:</strong> Rhythm Link</p>
+                <p><strong>Birthday:</strong> 1st November</p>
+
+                <h3>Featured Characters</h3>
+
+                <div class="story-characters">
+                    <img
+                        src="../../../images/characters/undead/kaoru.png"
+                        alt="Kaoru Hakaze"
+                        title="Kaoru Hakaze"
+                    >
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+
+    <script>
+        const directoryScrollKey = "kaoru-birthday-directory-scroll";
+
+        window.addEventListener("pagehide", () => {
+            sessionStorage.setItem(directoryScrollKey, window.scrollY);
+        });
+
+        window.addEventListener("pageshow", () => {
+            const savedScroll = sessionStorage.getItem(directoryScrollKey);
+
+            if (savedScroll !== null) {
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        window.scrollTo(0, Number(savedScroll));
+                        sessionStorage.removeItem(directoryScrollKey);
+                    });
+                });
+            }
+        });
+    </script>
+
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
