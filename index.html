@@ -248,6 +248,38 @@
         .latest-link:hover {
             text-decoration: underline;
         }
+       /* Latest update layout */
+.latest-update-layout {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.latest-update-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.latest-update-image {
+    display: block;
+    width: 130px;
+    max-width: 38%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .latest-update-layout {
+        gap: 10px;
+    }
+
+    .latest-update-image {
+        width: 110px;
+        max-width: 35%;
+    }
+}
 
       .character-grid {
     display: grid;
