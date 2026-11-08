@@ -28,6 +28,12 @@ document.addEventListener("click", event => {
     const destination = new URL(link.href, window.location.href);
 
     if (destination.origin !== window.location.origin) return;
+    // Allow links to sections within the current page
+if (
+    destination.pathname === window.location.pathname &&
+    destination.search === window.location.search &&
+    destination.hash
+) return;
 
     event.preventDefault();
     document.body.classList.add("page-leaving");
