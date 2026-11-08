@@ -886,6 +886,20 @@ body.page-leaving {
 .idol-story-card .story-type {
     font-size: 11px;
 }
+         /* Backdoor story card layout */
+.backdoor-story-card .story-card-summary {
+    min-height: 180px;
+}
+
+/* Portrait artwork — preserve the full image */
+.backdoor-story-card .story-thumbnail {
+    width: 110px;
+    min-width: 110px;
+    flex: 0 0 110px;
+    height: auto;
+    aspect-ratio: 375 / 533;
+    object-fit: contain;
+}
     </style>
 </head>
 
