@@ -118,10 +118,12 @@ function renderLatestUpdate() {
 
     const latestStory = stories
         .filter(story => story.latestChapter && story.latestChapter.dateAdded)
-        .sort((a, b) =>
-            new Date(b.latestChapter.dateAdded) -
-            new Date(a.latestChapter.dateAdded)
-        )[0];
+       .sort((a, b) =>
+    new Date(b.latestChapter.dateAdded) -
+    new Date(a.latestChapter.dateAdded) ||
+    new Date(b.dateAdded) -
+    new Date(a.dateAdded)
+)[0];
 
     if (!latestStory) {
         latestUpdateContent.textContent = "No updates available yet ♡";
