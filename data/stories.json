@@ -247,6 +247,23 @@
     "url": "./stories/idol-stories/kaoru-confession-night-4-star/index.html",
     "dateAdded": "2026-11-08"
   }
+},
+  {
+  "id": "backdoor",
+  "title": "Backdoor",
+  "unit": "undead",
+  "type": "other",
+  "image": "./images/stories/extra-content/backdoor/backdoor.png",
+  "characters": ["kaoru", "rei", "koga"],
+  "description": "An original scenario written by Akira.",
+  "url": "./stories/extra-content/backdoor/index.html",
+  "dateAdded": "2026-11-08",
+  "eventDate": "2023-11-11",
+  "latestChapter": {
+    "title": "Backdoor",
+    "url": "./stories/extra-content/backdoor/index.html",
+    "dateAdded": "2026-11-08"
+  }
 }
 
   ]
