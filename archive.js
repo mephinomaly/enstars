@@ -549,17 +549,17 @@ const matchesUnit = unitCharacters.every(id =>
             expanded.appendChild(characterRow);
         }
 
-        // Story description
-        if (story.description) {
-            expanded.appendChild(
-                makeElement("h4", "expanded-heading", "Summary")
-            );
+     // Story description
+if (story.description) {
+    expanded.appendChild(
+        makeElement("h4", "expanded-heading", "Summary")
+    );
 
-            expanded.appendChild(
-                makeElement("p", "story-description", story.description)
-            );
-        }
+    const description = makeElement("p", "story-description");
+    description.innerHTML = story.description;
 
+    expanded.appendChild(description);
+}
      // Read story link
 const link = makeElement(
     "a",
