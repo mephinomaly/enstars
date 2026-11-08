@@ -231,7 +231,7 @@
     "dateAdded": "2026-11-08"
   }
 },
-     {
+{
   "id": "kaoru-confession-night-4-star",
   "title": "Confession Night",
   "unit": "undead",
@@ -241,7 +241,12 @@
   "description": "<i>“But you’re always the one asking me when I was going to tell her how I feel!”</i> — Kaoru confesses his feelings for Anzu...",
   "url": "./stories/idol-stories/kaoru-confession-night-4-star/index.html",
   "dateAdded": "2026-11-08",
-  "eventDate": "2026-08-25"
+  "eventDate": "2026-08-25",
+  "latestChapter": {
+    "title": "Confession Night",
+    "url": "./stories/idol-stories/kaoru-confession-night-4-star/index.html",
+    "dateAdded": "2026-11-08"
+  }
 }
 
   ]
