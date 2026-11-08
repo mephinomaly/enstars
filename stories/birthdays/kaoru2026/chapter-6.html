@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Livestream | Kaoru Hakaze Birthday Livestream</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+
+        .chapter-navigation {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <a class="back-link" href="index.html">← Back to directory</a>
+
+        <div class="birthday-title">
+            <h1>Kaoru Hakaze Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+            <h2>Birthday Livestream</h2>
+
+            <div class="oissu">
+                <figure>
+                    <img
+                        src="../../../images/stories/birthdays/kaoru2026/kaoru-birthday-chapter-6.png"
+                        alt="Birthday Livestream illustration"
+                    >
+                </figure>
+
+                <p>
+                    <b>Kaoru:</b> Looks like we're running out of time for today. Thank you all so much for staying with me until the very end! ♪
+                </p>
+
+                <p>
+                    Having people who are willing to spend my birthday with me like this... That's one of the special joys of being an idol, isn't it?
+                </p>
+
+                <p>
+                    I'm truly grateful to everyone who always listens to our songs, comes to see us, and cheers us on.
+                </p>
+
+                <p>
+                    That's why I'll keep working hard to make you all fall even more in love with us.
+                </p>
+
+                <p>
+                    …Just kidding, was that a bit too serious? Thanks for today, I’m already looking forward to the next time we meet~♪
+                </p>
+            </div>
+        </section>
+
+        <nav class="chapter-navigation">
+            <a href="chapter-5.html">← Previous chapter</a>
+        </nav>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
