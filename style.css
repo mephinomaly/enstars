@@ -851,3 +851,52 @@ body.page-leaving {
         font-size: 0.88rem;
     }
 }
+/* Backdoor translation information */
+.prose-story-info {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.prose-story-info h2 {
+    margin: 0 0 18px;
+    font-size: 1.15rem;
+    color: var(--text);
+}
+
+.prose-story-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.prose-story-info-row:nth-of-type(even) {
+    background: var(--surface-soft);
+}
+
+.prose-story-info-row span:first-child {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.prose-story-info-row span:last-child {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .prose-story-info-row {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .prose-story-info-row span:first-child,
+    .prose-story-info-row span:last-child {
+        font-size: 0.85rem;
+    }
+}
