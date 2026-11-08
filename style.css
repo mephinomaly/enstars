@@ -830,3 +830,24 @@ body.page-leaving {
 .footnote-back:hover {
     background: var(--border);
 }
+/* Backdoor introductory note */
+.prose-story-intro {
+    max-width: 720px;
+    margin: 0 auto 28px;
+    padding: 16px 22px;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    font-size: 0.92rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .prose-story-intro {
+        margin: 0 0 24px;
+        padding: 14px 16px;
+        font-size: 0.88rem;
+    }
+}
