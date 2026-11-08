@@ -266,6 +266,30 @@ That confession wasn’t a joke. I want to show her, slowly but surely, that I�
     </main>
 
     <script src="../../../main.js"></script>
-    <script src="../../../page-transition.js"></script>
+<script src="../../../page-transition.js"></script>
+
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    function updateThemeButton() {
+        const currentTheme = document.documentElement.dataset.theme || "light";
+        themeToggle.textContent = currentTheme === "dark"
+            ? "☀ Light mode"
+            : "☾ Dark mode";
+    }
+
+    updateThemeButton();
+
+    themeToggle.addEventListener("click", () => {
+        const currentTheme = document.documentElement.dataset.theme || "light";
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        document.documentElement.dataset.theme = newTheme;
+        localStorage.setItem("archive-theme", newTheme);
+
+        updateThemeButton();
+    });
+</script>
+
 </body>
 </html>
