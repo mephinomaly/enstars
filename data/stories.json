@@ -175,7 +175,8 @@
       "latestChapter": {
         "title": "Epilogue",
         "url": "./stories/velvet-ship/epilogue.html",
-        "dateAdded": "2026-11-06"
+        "dateAdded": "2026-11-06",
+        "eventDate": "2025-07-15"
       }
     },
     {
@@ -190,7 +191,8 @@
       "latestChapter": {
         "title": "Epilogue",
         "url": "./stories/in-memoriam/epilogue.html",
-        "dateAdded": "2026-11-05"
+        "dateAdded": "2026-11-05",
+        "eventDate": "2026-09-15"
       }
     },
      
