@@ -163,57 +163,58 @@
     }
   ],
    "stories": [
+  {
+  "id": "velvet-ship",
+  "title": "Velvet Ship",
+  "unit": "undead",
+  "type": "event",
+  "image": "./images/stories/velvet-ship/velvet-ship.png",
+  "characters": ["kaoru", "rei", "adonis", "koga"],
+  "description": "UNDEAD decide to hold ES Fan ThanX Festival with a theme they are quite familiar with - Pirates. However, when Kaoru and the others reach the port town where the event is due to take place, they encounter a ghost ship and find themselves trapped within the town...",
+  "url": "./stories/velvet-ship/index.html",
+  "eventDate": "2025-07-15",
+  "latestChapter": {
+    "title": "Epilogue",
+    "url": "./stories/velvet-ship/epilogue.html",
+    "dateAdded": "2026-11-06"
+  }
+},
     {
-      "id": "velvet-ship",
-      "title": "Velvet Ship",
-      "unit": "undead",
-      "type": "event",
-      "image": "./images/stories/velvet-ship/velvet-ship.png",
-      "characters": ["kaoru", "rei", "adonis", "koga"],
-      "description": "UNDEAD decide to hold ES Fan ThanX Festival with a theme they are quite familiar with - Pirates. However, when Kaoru and the others reach the port town where the event is due to take place, they encounter a ghost ship and find themselves trapped within the town...",
-      "url": "./stories/velvet-ship/index.html",
-      "latestChapter": {
-        "title": "Epilogue",
-        "url": "./stories/velvet-ship/epilogue.html",
-        "dateAdded": "2026-11-06",
-        "eventDate": "2025-07-15"
-      }
-    },
-    {
-      "id": "in-memoriam",
-      "title": "In Memoriam◆Handwriting, Chasing, Rambling",
-      "unit": "undead",
-      "type": "event",
-      "image": "./images/stories/in-memoriam/in-memoriam.png",
-      "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
-      "description": "Koga is chosen to judge for a Middle School Band Contest. After seeing a band inspired by the legendary rock group “MARBLING”, Koga speaks passionately about his love for rock music when sudden news breaks...",
-      "url": "./stories/in-memoriam/index.html",
-      "latestChapter": {
-        "title": "Epilogue",
-        "url": "./stories/in-memoriam/epilogue.html",
-        "dateAdded": "2026-11-05",
-        "eventDate": "2026-09-15"
-      }
-    },
+  "id": "in-memoriam",
+  "title": "In Memoriam◆Handwriting, Chasing, Rambling",
+  "unit": "undead",
+  "type": "event",
+  "image": "./images/stories/in-memoriam/in-memoriam.png",
+  "characters": ["koga", "rei", "kaoru", "adonis", "tatsumi"],
+  "description": "Koga is chosen to judge for a Middle School Band Contest. After seeing a band inspired by the legendary rock group “MARBLING”, Koga speaks passionately about his love for rock music when sudden news breaks...",
+  "url": "./stories/in-memoriam/index.html",
+  "eventDate": "2026-09-15",
+  "latestChapter": {
+    "title": "Epilogue",
+    "url": "./stories/in-memoriam/epilogue.html",
+    "dateAdded": "2026-11-05"
+  }
+},
      
-    {
-      "id": "rei-birthday-2026",
-      "title": "Rei Sakuma Birthday Livestream",
-      "unit": "undead",
-      "type": "other",
-      "image": "./images/stories/birthdays/rei2026/rei-birthday-chapter-1.jpg",
-      "characters": ["rei", "kaoru", "wataru"],
-      "description": "Rei Sakuma's 2026 birthday campaign.",
-           "url": "./stories/birthdays/rei2026/index.html",
-      "dateAdded": "2026-11-07",
-      "latestChapter": {
-        "title": "Birthday Livestream",
-        "url": "./stories/birthdays/rei2026/chapter-6.html",
-        "dateAdded": "2026-11-06",
-        "eventDate": "2026-11-02"
-      }
+{
+  "id": "rei-birthday-2026",
+  "title": "Rei Sakuma Birthday Livestream",
+  "unit": "undead",
+  "type": "other",
+  "image": "./images/stories/birthdays/rei2026/rei-birthday-chapter-1.jpg",
+  "characters": ["rei", "kaoru", "wataru"],
+  "description": "Rei Sakuma's 2026 birthday campaign.",
+  "url": "./stories/birthdays/rei2026/index.html",
+  "dateAdded": "2026-11-07",
+  "eventDate": "2026-11-02",
+  "latestChapter": {
+    "title": "Birthday Livestream",
+    "url": "./stories/birthdays/rei2026/chapter-6.html",
+    "dateAdded": "2026-11-06"
+  }
+}
     },
-   {
+  {
   "id": "kaoru-birthday-2026",
   "title": "Kaoru Hakaze Birthday Livestream",
   "unit": "undead",
@@ -223,11 +224,11 @@
   "description": "Kaoru Hakaze's 2026 birthday campaign.",
   "url": "./stories/birthdays/kaoru2026/index.html",
   "dateAdded": "2026-11-07",
+  "eventDate": "2026-11-03",
   "latestChapter": {
     "title": "Birthday Livestream",
     "url": "./stories/birthdays/kaoru2026/chapter-6.html",
-    "dateAdded": "2026-11-08",
-    "eventDate": "2026-11-03"
+    "dateAdded": "2026-11-08"
   }
 }
 
