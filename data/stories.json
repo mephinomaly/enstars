@@ -207,7 +207,8 @@
       "latestChapter": {
         "title": "Birthday Livestream",
         "url": "./stories/birthdays/rei2026/chapter-6.html",
-        "dateAdded": "2026-11-06"
+        "dateAdded": "2026-11-06",
+        "eventDate": "2026-11-02"
       }
     },
    {
@@ -223,7 +224,8 @@
   "latestChapter": {
     "title": "Birthday Livestream",
     "url": "./stories/birthdays/kaoru2026/chapter-6.html",
-    "dateAdded": "2026-11-08"
+    "dateAdded": "2026-11-08",
+    "eventDate": "2026-11-03"
   }
 }
 
