@@ -432,6 +432,9 @@ const matchesUnit = unitCharacters.every(id =>
     .forEach(story => {
         // Create the expandable card
         const card = makeElement("details", "story-card");
+        if (story.type === "idol") {
+    card.classList.add("idol-story-card");
+}
 
         // The always-visible part of the card
         const summary = makeElement("summary", "story-card-summary");
