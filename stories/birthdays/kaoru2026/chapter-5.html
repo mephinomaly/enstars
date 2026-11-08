@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Livestream | Kaoru Hakaze Birthday Livestream</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+
+    <style>
+        .birthday-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .birthday-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .birthday-chapter {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .birthday-chapter h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .birthday-chapter .oissu {
+            margin: 0;
+        }
+
+        .birthday-chapter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 12px;
+            margin: 28px 0;
+        }
+
+        .birthday-chapter-buttons a {
+            display: inline-block;
+            padding: 11px 22px;
+            background: var(--accent-dark);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .birthday-chapter-buttons a:hover {
+            background: var(--text);
+        }
+
+        .chapter-navigation {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container birthday-page">
+
+        <a class="back-link" href="index.html">← Back to directory</a>
+
+        <div class="birthday-title">
+            <h1>Kaoru Hakaze Birthday Livestream</h1>
+        </div>
+
+        <section class="birthday-chapter">
+            <h2>Birthday Livestream</h2>
+
+            <div class="oissu">
+                <figure>
+                    <img
+                        src="../../../images/stories/birthdays/kaoru2026/kaoru-birthday-chapter-4.png"
+                        alt="Birthday Livestream illustration"
+                    >
+                </figure>
+
+                <p>
+                    <b>Kaoru:</b> Quite a few people are asking if Rei-kun and I are celebrating our birthdays together since they're only a day apart.
+                </p>
+
+                <p>
+                    <b>Koga:</b> We had work 'til late yesterday, so UNDEAD's gonna go out for a meal and celebrate both our birthdays together.
+                </p>
+
+                <p>
+                    <b>Kaoru:</b> Yep! We finally found a day when everyone's schedules lined up, so I'm really looking forward to spending time with everyone.
+                </p>
+
+                <p>
+                    <b>Koga:</b> I made a reservation at a place I'm sure Adonis, you, and Sakuma-senpai'll all like. I'm lookin' forward to it! ♪
+                </p>
+
+                <p>
+                    <b>Kaoru:</b> Thanks, Koga-kun. I can't wait to see what kind of place you've picked~♪
+                </p>
+            </div>
+        </section>
+
+        <nav class="chapter-navigation">
+            <a href="chapter-4.html">← Previous chapter</a>
+            <a href="chapter-6.html">Next chapter →</a>
+        </nav>
+
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+
+            updateThemeButton();
+        });
+    </script>
+
+</body>
+</html>
