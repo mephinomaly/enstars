@@ -451,6 +451,13 @@ if (story.id === "backdoor") {
 
         if (story.image) {
             const image = document.createElement("img");
+            if (story.id === "backdoor") {
+    thumbnail.classList.add("backdoor-thumbnail");
+    thumbnail.style.setProperty(
+        "--thumbnail-image",
+        `url("${story.image}")`
+    );
+}
             image.src = story.image;
             image.alt = story.title;
             image.loading = "lazy";
