@@ -210,7 +210,7 @@
         "dateAdded": "2026-11-06"
       }
     },
-     {
+   {
   "id": "kaoru-birthday-2026",
   "title": "Kaoru Hakaze Birthday Livestream",
   "unit": "undead",
@@ -219,7 +219,12 @@
   "characters": ["kaoru", "koga", "juis"],
   "description": "Kaoru Hakaze's 2026 birthday campaign.",
   "url": "./stories/birthdays/kaoru2026/index.html",
-       "dateAdded": "2026-11-07"
+  "dateAdded": "2026-11-07",
+  "latestChapter": {
+    "title": "Birthday Livestream",
+    "url": "./stories/birthdays/kaoru2026/chapter-6.html",
+    "dateAdded": "2026-11-08"
+  }
 }
 
   ]
