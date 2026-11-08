@@ -254,7 +254,7 @@
   "unit": "undead",
   "type": "other",
   "image": "./images/stories/extra-content/backdoor/backdoor.png",
-  "characters": ["kaoru", "rei", "koga"],
+  "characters": ["koga", "rei", "kaoru"],
   "description": "An original scenario written by Akira.",
   "url": "./stories/extra-content/backdoor/index.html",
   "dateAdded": "2026-11-08",
