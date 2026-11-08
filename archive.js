@@ -427,7 +427,9 @@ const matchesUnit = unitCharacters.every(id =>
         return;
     }
 
-    filteredStories.forEach(story => {
+   filteredStories
+    .sort((a, b) => new Date(b.eventDate || "1900-01-01") - new Date(a.eventDate || "1900-01-01"))
+    .forEach(story => {
         // Create the expandable card
         const card = makeElement("details", "story-card");
 
