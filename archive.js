@@ -432,10 +432,15 @@ const matchesUnit = unitCharacters.every(id =>
    filteredStories
     .sort((a, b) => new Date(b.eventDate || "1900-01-01") - new Date(a.eventDate || "1900-01-01"))
     .forEach(story => {
-        // Create the expandable card
-        const card = makeElement("details", "story-card");
-        if (story.type === "idol") {
+     // Create the expandable card
+const card = makeElement("details", "story-card");
+
+if (story.type === "idol") {
     card.classList.add("idol-story-card");
+}
+
+if (story.id === "backdoor") {
+    card.classList.add("backdoor-story-card");
 }
 
         // The always-visible part of the card
