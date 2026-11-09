@@ -28,6 +28,34 @@
       "agency": "rhythm-link",
       "image": "./images/characters/undead/adonis.png"
     },
+    {
+    "id": "tomoya",
+    "name": "Tomoya Mashiro",
+    "unit": "rabits",
+    "agency": "rhythm-link",
+    "image": "./images/characters/rabits/tomoya.png"
+},
+{
+    "id": "nazuna",
+    "name": "Nazuna Nito",
+    "unit": "rabits",
+    "agency": "rhythm-link",
+    "image": "./images/characters/rabits/nazuna.png"
+},
+{
+    "id": "mitsuru",
+    "name": "Mitsuru Tenma",
+    "unit": "rabits",
+    "agency": "rhythm-link",
+    "image": "./images/characters/rabits/mitsuru.png"
+},
+{
+    "id": "hajime",
+    "name": "Hajime Shino",
+    "unit": "rabits",
+    "agency": "rhythm-link",
+    "image": "./images/characters/rabits/hajime.png"
+},
      {
       "id": "keito",
       "name": "Keito Hasumi",
