@@ -264,6 +264,30 @@
     "url": "./stories/extra-content/backdoor/index.html",
     "dateAdded": "2026-11-08"
   }
+},
+     {
+    "id": "flashback",
+    "title": "Flashback",
+    "type": "event",
+    "image": "./images/stories/event/flashback/flashback.png",
+    "characters": [
+        "rei",
+        "koga",
+        "kaoru",
+        "adonis",
+        "keito",
+        "hajime",
+        "tomoya"
+    ],
+    "description": "",
+    "url": "./stories/event/flashback/index.html",
+    "dateAdded": "2026-11-09",
+       "eventDate": "2023-11-15",
+    "latestChapter": {
+        "title": "Prologue",
+        "url": "./stories/event/flashback/prologue.html",
+        "dateAdded": "2026-11-09"
+    }
 }
 
   ]
