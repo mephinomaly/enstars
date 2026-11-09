@@ -231,6 +231,7 @@ const unitOrder = [
     "eden",
     "fine",
     "alkaloid",
+    "rabits",
     "akatsuki",
     "mellow-dear-us"
 ];
@@ -238,13 +239,14 @@ const unitOrder = [
 units.sort((a, b) => unitOrder.indexOf(a) - unitOrder.indexOf(b));
 
     const unitNames = {
-        undead: "UNDEAD",
-        eden: "Eden",
-        alkaloid: "ALKALOID",
-        akatsuki: "AKATSUKI",
-        fine: "fine",
-        "mellow-dear-us": "MELLOW DEAR US"
-    };
+    undead: "UNDEAD",
+    eden: "Eden",
+    alkaloid: "ALKALOID",
+    rabits: "Ra*bits",
+    akatsuki: "AKATSUKI",
+    fine: "fine",
+    "mellow-dear-us": "MELLOW DEAR US"
+};
 
     units.forEach(unit => {
         const unitCharacters = agencyCharacters.filter(
