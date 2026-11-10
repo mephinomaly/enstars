@@ -316,7 +316,33 @@
         "url": "./stories/event/flashback/prologue.html",
         "dateAdded": "2026-11-09"
     }
+},
+     
+{
+    "id": "adonis-rhythm-link-championships-4-star",
+    "title": "The Rhythm Link Championships: Arm Wrestling Tournament",
+    "unit": "undead",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/adonis-rhythm-link-championships-4-star/adonis-arm.png",
+    "characters": [
+        "adonis",
+        "rei",
+        "koga",
+        "kaoru",
+        "keito",
+        "tomoya",
+        "hajime"
+    ],
+    "url": "./stories/idol-stories/adonis-rhythm-link-championships-4-star/index.html",
+    "dateAdded": "2026-11-10",
+    "eventDate": "2020-12-10",
+    "latestChapter": {
+        "title": "The Rhythm Link Championships: Arm Wrestling Tournament",
+        "url": "./stories/idol-stories/adonis-rhythm-link-championships-4-star/index.html",
+        "dateAdded": "2026-11-10"
+    }
 }
+
 
   ]
 }
