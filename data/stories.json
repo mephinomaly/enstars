@@ -342,7 +342,24 @@
         "url": "./stories/idol-stories/adonis-rhythm-link-championships-4-star/index.html",
         "dateAdded": "2026-11-10"
     }
+},
+     
+{
+    "id": "white-and-black-wartime",
+    "title": "White and Black Wartime",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/white-and-black-wartime/rei-war.png",
+    "characters": ["rei", "aira", "eichi"],
+    "url": "./stories/idol-stories/white-and-black-wartime/index.html",
+    "dateAdded": "2026-11-10",
+    "eventDate": "2022-03-25",
+    "latestChapter": {
+        "title": "White and Black Wartime",
+        "url": "./stories/idol-stories/white-and-black-wartime/index.html",
+        "dateAdded": "2026-11-10"
+    }
 }
+
 
 
   ]
