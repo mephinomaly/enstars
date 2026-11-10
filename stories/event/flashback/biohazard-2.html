@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOHAZARD – Chapter 2 | Flashback</title>
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="chapter-page">
+            <a class="back-link" href="index.html">← Back to directory</a>
+            <h1>Flashback</h1>
+            <h2>BIOHAZARD – Chapter 2</h2>
+
+            <div class="chapter-characters">
+                <img src="../../../images/characters/undead/rei.png" alt="Rei Sakuma" title="Rei Sakuma">
+                <img src="../../../images/characters/undead/koga.png" alt="Koga Oogami" title="Koga Oogami">
+                <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru Hakaze" title="Kaoru Hakaze">
+                <img src="../../../images/characters/undead/adonis.png" alt="Adonis Otogari" title="Adonis Otogari">
+            </div>
+
+            <div class="oissu">
+                <!-- Chapter 2 translation goes here -->
+            </div>
+
+            <nav class="chapter-navigation">
+                <a href="biohazard-1.html">← Previous chapter</a>
+                <a href="biohazard-3.html">Next chapter →</a>
+            </nav>
+        </article>
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            themeToggle.textContent = currentTheme === "dark"
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        updateThemeButton();
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme || "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+            updateThemeButton();
+        });
+    </script>
+</body>
+</html>
