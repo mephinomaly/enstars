@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOHAZARD — Chapter 3 | Flashback</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="chapter-page">
+            <a class="back-link" href="index.html">← Back to directory</a>
+
+            <h1>BIOHAZARD — Chapter 3</h1>
+            <p class="chapter-subtitle">Flashback</p>
+
+            <div class="chapter-characters">
+                <img src="../../../images/characters/undead/rei.png" alt="Rei Sakuma">
+                <img src="../../../images/characters/undead/koga.png" alt="Koga Oogami">
+                <img src="../../../images/characters/undead/kaoru.png" alt="Kaoru Hakaze">
+                <img src="../../../images/characters/undead/adonis.png" alt="Adonis Otogari">
+                <img src="../../../images/characters/rabits/tomoya.png" alt="Tomoya Mashiro">
+                <img src="../../../images/characters/rabits/hajime.png" alt="Hajime Shino">
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="biohazard-2.html">← Previous Chapter</a>
+                <a href="biohazard-4.html">Next Chapter →</a>
+            </div>
+
+            <div class="oissu">
+                <!-- Paste the Chapter 3 translation here -->
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="biohazard-2.html">← Previous Chapter</a>
+                <a href="biohazard-4.html">Next Chapter →</a>
+            </div>
+        </article>
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.dataset.theme;
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+            themeToggle.textContent =
+                newTheme === "dark" ? "☀ Light mode" : "☾ Dark mode";
+        });
+
+        const currentTheme = document.documentElement.dataset.theme;
+        themeToggle.textContent =
+            currentTheme === "dark" ? "☀ Light mode" : "☾ Dark mode";
+    </script>
+</body>
+</html>
