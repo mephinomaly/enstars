@@ -936,6 +936,31 @@ body.page-leaving {
     object-fit: contain;
 }
 }
+         .quick-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 14px 0 20px;
+}
+
+.quick-filter {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 20px;
+    padding: 6px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quick-filter:hover,
+.quick-filter.active {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: #FFFFFF;
+}
     </style>
 </head>
 
@@ -1038,6 +1063,14 @@ body.page-leaving {
             </div>
 
         </div>
+         <div class="quick-filters" aria-label="Quick story filters">
+    <button class="quick-filter active" type="button" data-type="">All</button>
+    <button class="quick-filter" type="button" data-type="event">Event</button>
+    <button class="quick-filter" type="button" data-type="scout">Scout</button>
+    <button class="quick-filter" type="button" data-type="idol">Idol</button>
+    <button class="quick-filter" type="button" data-type="main">Main</button>
+    <button class="quick-filter" type="button" data-type="other">Other</button>
+</div>
     </details>
 </section>
 
