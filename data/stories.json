@@ -350,6 +350,7 @@
     "type": "idol",
     "image": "./images/stories/idol-stories/white-and-black-wartime/rei-war.png",
     "characters": ["rei", "aira", "eichi"],
+  "description": "Of course. I'll be delighted to serve you some tea hot enough to scald your tongue...♪",
     "url": "./stories/idol-stories/white-and-black-wartime/index.html",
     "dateAdded": "2026-11-10",
     "eventDate": "2022-03-25",
