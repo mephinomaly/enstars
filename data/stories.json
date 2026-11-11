@@ -359,6 +359,21 @@
         "url": "./stories/idol-stories/white-and-black-wartime/index.html",
         "dateAdded": "2026-11-10"
     }
+},
+     {
+    "id": "people-and-fish",
+    "title": "People and Fish",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/people-and-fish/kanatapeople.png",
+    "characters": ["kanata", "souma", "kaoru"],
+    "url": "./stories/idol-stories/people-and-fish/index.html",
+    "dateAdded": "2026-11-11",
+    "eventDate": "2020-10-25",
+    "latestChapter": {
+        "title": "People and Fish",
+        "url": "./stories/idol-stories/people-and-fish/index.html",
+        "dateAdded": "2026-11-11"
+    }
 }
 
 
