@@ -814,12 +814,25 @@ font-weight: bold;
     text-decoration: underline;
 }
 
+
 /* Smaller screens */
 @media (max-width: 600px) {
     #story-list {
         grid-template-columns: 1fr;
     }
+
+    .story-thumbnail {
+        width: 110px;
+        min-width: 110px;
+        flex: 0 0 110px;
+    }
+
+    .story-title {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
 }
+
 /* Page fade transitions */
 body {
     opacity: 0;
