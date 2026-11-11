@@ -590,11 +590,33 @@ font-weight: bold;
     }
 }
 
-@media (max-width: 380px) {
+
+@media (max-width: 600px) {
     .character-grid {
         grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .unit-section {
+        min-width: 0;
+    }
+
+    .unit-characters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 5px 3px 10px;
+        scrollbar-width: thin;
+    }
+
+    .character-button {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+        flex: 0 0 54px;
     }
 }
+
               /* Homepage feature row responsive layout */
         @media (max-width: 600px) {
             .homepage-feature-row {
