@@ -665,10 +665,39 @@ unitFilter.addEventListener("change", () => {
     renderStoriesWithTransition();
 });
 
-typeFilter.addEventListener("change", renderStoriesWithTransition);
+// Quick story type filters
+const quickFilterButtons = document.querySelectorAll(".quick-filter");
+
+function updateQuickFilterButtons() {
+    quickFilterButtons.forEach(button => {
+        const isActive = button.dataset.type === typeFilter.value;
+
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", isActive);
+    });
+}
+
+quickFilterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        typeFilter.value = button.dataset.type;
+        updateQuickFilterButtons();
+        renderStoriesWithTransition();
+    });
+});
+
+// Keep quick buttons in sync with Advanced Search
+typeFilter.addEventListener("change", () => {
+    updateQuickFilterButtons();
+    renderStoriesWithTransition();
+});
 
 document.getElementById("clear-filters")
-    .addEventListener("click", clearFilters);
+    .addEventListener("click", () => {
+        clearFilters();
+        updateQuickFilterButtons();
+    });
+
+updateQuickFilterButtons();
 
 // Light/dark theme toggle
 const themeButton = document.getElementById("theme-toggle");
