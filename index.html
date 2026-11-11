@@ -682,6 +682,12 @@ font-weight: bold;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 16px;
     align-items: start;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#story-list.is-updating {
+    opacity: 0;
+    transform: translateY(5px);
 }
 
 /* Individual story cards */
