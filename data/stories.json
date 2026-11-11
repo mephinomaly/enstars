@@ -161,6 +161,42 @@
   "agency": "starmaker",
   "image": "./images/characters/fine/yuzuru.png"
 },
+{
+  "id": "tetora",
+  "name": "Tetora Nagumo",
+  "unit": "ryuseitai",
+  "agency": "starmaker",
+  "image": "./images/characters/ryuseitai/tetora.png"
+},
+{
+  "id": "midori",
+  "name": "Midori Takamine",
+  "unit": "ryuseitai",
+  "agency": "starmaker",
+  "image": "./images/characters/ryuseitai/midori.png"
+},
+{
+  "id": "shinobu",
+  "name": "Shinobu Sengoku",
+  "unit": "ryuseitai",
+  "agency": "starmaker",
+  "image": "./images/characters/ryuseitai/shinobu.png"
+},
+{
+  "id": "chiaki",
+  "name": "Chiaki Morisawa",
+  "unit": "ryuseitai",
+  "agency": "starmaker",
+  "image": "./images/characters/ryuseitai/chiaki.png"
+},
+{
+  "id": "kanata",
+  "name": "Kanata Shinkai",
+  "unit": "ryuseitai",
+  "agency": "starmaker",
+  "image": "./images/characters/ryuseitai/kanata.png"
+},
+    
     {
       "id": "nagisa",
       "name": "Nagisa Ran",
