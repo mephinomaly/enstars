@@ -402,6 +402,7 @@
     "type": "idol",
     "image": "./images/stories/idol-stories/people-and-fish/kanatapeople.png",
     "characters": ["kanata", "souma", "kaoru"],
+       "description": "An oarfish?! Where on earth were you hiding that?!",
     "url": "./stories/idol-stories/people-and-fish/index.html",
     "dateAdded": "2026-11-11",
     "eventDate": "2020-10-25",
