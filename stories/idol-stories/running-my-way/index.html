@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running My Way | Idol Story</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="chapter-page">
+            <a class="back-link" href="../../../index.html">← Back to archive</a>
+
+            <div class="confession-header">
+                <div class="confession-title">
+                    <h1>Running My Way</h1>
+                    <p>Idol Story</p>
+                </div>
+
+                <img
+                    class="confession-card-art"
+                    src="../../../images/stories/idol-stories/running-my-way/adonis-training.png"
+                    alt="Running My Way card illustration"
+                >
+            </div>
+
+            <div class="chapter-characters">
+                <img src="../../../images/characters/alkaloid/adonis.png" alt="Adonis Otogari">
+                <img src="../../../images/characters/ryuseitai/tetora.png" alt="Tetora Nagumo">
+                <img src="../../../images/characters/rabits/mitsuru.png" alt="Mitsuru Tenma">
+                <img src="../../../images/characters/eden/jun.png" alt="Jun Sazanami">
+            </div>
+
+            <div class="oissu">
+                <!-- Translation goes here -->
+            </div>
+
+            <div class="prose-story-info">
+                <h3>Translation Information</h3>
+
+                <div class="prose-story-info-row">
+                    <span>Original release</span>
+                    <span>10 April 2022</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Originally translated</span>
+                    <span>11 April 2022</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Last revised</span>
+                    <span>12 November 2026</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Translation</span>
+                    <span>mephinomaly</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Proofreading</span>
+                    <span>THE genESIS</span>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeButton = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const isDark =
+                document.documentElement.dataset.theme === "dark";
+
+            themeButton.textContent = isDark
+                ? "☀ Light mode"
+                : "☾ Dark mode";
+        }
+
+        themeButton.addEventListener("click", () => {
+            const isDark =
+                document.documentElement.dataset.theme === "dark";
+
+            const nextTheme = isDark ? "light" : "dark";
+
+            document.documentElement.dataset.theme = nextTheme;
+            localStorage.setItem("archive-theme", nextTheme);
+
+            updateThemeButton();
+        });
+
+        updateThemeButton();
+    </script>
+</body>
+</html>
