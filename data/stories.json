@@ -411,7 +411,31 @@
         "url": "./stories/idol-stories/people-and-fish/index.html",
         "dateAdded": "2026-11-11"
     }
+},
+     
+{
+    "id": "running-my-way",
+    "title": "Running My Way",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/running-my-way/adonis-training.png",
+    "characters": [
+        "adonis",
+        "tetora",
+        "mitsuru",
+        "jun"
+    ],
+  "description": "But if you don't mind, I'd like to take this opportunity to get to know you better. You've got some pretty impressive muscles, after all...♪
+",
+    "url": "./stories/idol-stories/running-my-way/index.html",
+    "dateAdded": "2026-11-12",
+    "eventDate": "2022-04-10",
+    "latestChapter": {
+        "title": "Running My Way",
+        "url": "./stories/idol-stories/running-my-way/index.html",
+        "dateAdded": "2026-11-12"
+    }
 }
+
 
 
 
