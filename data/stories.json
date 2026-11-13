@@ -105,34 +105,7 @@
       "agency": "rhythm-link",
       "image": "./images/characters/mellow-dear-us/chitose.png"
     },
-    {
-      "id": "hiiro",
-      "name": "Hiiro Amagi",
-      "unit": "alkaloid",
-       "agency": "starmaker",
-      "image": "./images/characters/alkaloid/hiiro.png"
-    },
-    {
-      "id": "aira",
-      "name": "Aira Shiratori",
-      "unit": "alkaloid",
-       "agency": "starmaker",
-      "image": "./images/characters/alkaloid/aira.png"
-    },
-    {
-      "id": "mayoi",
-      "name": "Mayoi Ayase",
-      "unit": "alkaloid",
-       "agency": "starmaker",
-      "image": "./images/characters/alkaloid/mayoi.png"
-    },
-    {
-      "id": "tatsumi",
-      "name": "Tatsumi Kazehaya",
-      "unit": "alkaloid",
-       "agency": "starmaker",
-      "image": "./images/characters/alkaloid/tatsumi.png"
-    },
+   
     {
   "id": "eichi",
   "name": "Eichi Tenshouin",
@@ -161,7 +134,7 @@
   "agency": "starmaker",
   "image": "./images/characters/fine/yuzuru.png"
 },
-{
+    {
   "id": "tetora",
   "name": "Tetora Nagumo",
   "unit": "ryuseitai",
@@ -196,7 +169,35 @@
   "agency": "starmaker",
   "image": "./images/characters/ryuseitai/kanata.png"
 },
-    
+     {
+      "id": "hiiro",
+      "name": "Hiiro Amagi",
+      "unit": "alkaloid",
+       "agency": "starmaker",
+      "image": "./images/characters/alkaloid/hiiro.png"
+    },
+    {
+      "id": "aira",
+      "name": "Aira Shiratori",
+      "unit": "alkaloid",
+       "agency": "starmaker",
+      "image": "./images/characters/alkaloid/aira.png"
+    },
+    {
+      "id": "mayoi",
+      "name": "Mayoi Ayase",
+      "unit": "alkaloid",
+       "agency": "starmaker",
+      "image": "./images/characters/alkaloid/mayoi.png"
+    },
+    {
+      "id": "tatsumi",
+      "name": "Tatsumi Kazehaya",
+      "unit": "alkaloid",
+       "agency": "starmaker",
+      "image": "./images/characters/alkaloid/tatsumi.png"
+    },
+
     {
       "id": "nagisa",
       "name": "Nagisa Ran",
