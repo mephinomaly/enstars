@@ -221,22 +221,41 @@ function renderCharacters() {
         character => character.agency === currentAgency
     );
 
-    // Group characters by unit
-   const units = [...new Set(
+  // Group characters by unit
+const units = [...new Set(
     agencyCharacters.map(character => character.unit)
 )];
 
-const unitOrder = [
-    "undead",
-    "eden",
-    "fine",
-    "alkaloid",
-    "rabits",
-    "akatsuki",
-    "mellow-dear-us"
-];
+const unitOrders = {
+    starmaker: [
+        "fine",
+        "ryuseitai",
+        "alkaloid"
+    ],
+    cosmic-production: [
+        "eden",
+        "valkyrie"
+    ],
+    rhythm-link: [
+        "undead",
+        "akatsuki",
+        "rabits",
+        "mellow-dear-us"
+    ],
+    new-dimension: [
+        "knights"
+    ]
+};
 
-units.sort((a, b) => unitOrder.indexOf(a) - unitOrder.indexOf(b));
+const unitOrder = unitOrders[currentAgency] || [];
+
+units.sort((a, b) => {
+    const indexA = unitOrder.indexOf(a);
+    const indexB = unitOrder.indexOf(b);
+
+    return (indexA === -1 ? Infinity : indexA) -
+           (indexB === -1 ? Infinity : indexB);
+});
 
     const unitNames = {
     fine: "fine",
