@@ -224,7 +224,21 @@
       "unit": "eden",
       "agency": "cosmic-production",
       "image": "./images/characters/eden/jun.png"
-    }
+    },
+    {
+    "id": "shu",
+    "name": "Shu Itsuki",
+    "unit": "valkyrie",
+    "agency": "cosmic-production",
+    "image": "./images/characters/valkyrie/shu.png"
+},
+{
+    "id": "mika",
+    "name": "Mika Kagehira",
+    "unit": "valkyrie",
+    "agency": "cosmic-production",
+    "image": "./images/characters/valkyrie/mika.png"
+}
   ],
    "stories": [
   {
