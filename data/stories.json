@@ -233,6 +233,48 @@
     "agency": "cosmic-production",
     "image": "./images/characters/valkyrie/shu.png"
 },
+    {
+    "id": "hinata",
+    "name": "Hinata Aoi",
+    "unit": "2wink",
+    "agency": "cosmic-production",
+    "image": "./images/characters/2wink/hinata.png"
+},
+    {
+    "id": "yuuta",
+    "name": "Yuuta Aoi",
+    "unit": "2wink",
+    "agency": "cosmic-production",
+    "image": "./images/characters/2wink/yuuta.png"
+},
+    {
+    "id": "rinne",
+    "name": "Rinne Amagi",
+    "unit": "crazyb",
+    "agency": "cosmic-production",
+    "image": "./images/characters/crazyb/rinne.png"
+},
+       {
+    "id": "himeru",
+    "name": "HiMERU",
+    "unit": "crazyb",
+    "agency": "cosmic-production",
+    "image": "./images/characters/crazyb/himeru.png"
+},
+       {
+    "id": "kohaku",
+    "name": "Kohaku Oukawa",
+    "unit": "crazyb",
+    "agency": "cosmic-production",
+    "image": "./images/characters/crazyb/kohaku.png"
+},
+       {
+    "id": "niki",
+    "name": "Niki Shiina",
+    "unit": "crazyb",
+    "agency": "cosmic-production",
+    "image": "./images/characters/crazyb/niki.png"
+},
 {
     "id": "mika",
     "name": "Mika Kagehira",
@@ -274,8 +316,25 @@
     "unit": "knights",
     "agency": "new-dimension",
     "image": "./images/characters/knights/arashi.png"
-}
-  ],
+}, {
+    "id": "natsume",
+    "name": "Natsume Sakasaki",
+    "unit": "switch",
+    "agency": "new-dimension",
+    "image": "./images/characters/switch/natsume.png"
+    },{
+  "id": "tsumugi",
+    "name": "Tsumugi Aoba",
+    "unit": "switch",
+    "agency": "new-dimension",
+    "image": "./images/characters/switch/tsumugi.png"
+    },  {
+  "id": "sora",
+    "name": "Sora Harukawa",
+    "unit": "switch",
+    "agency": "new-dimension",
+    "image": "./images/characters/switch/sora.png"
+    }
    "stories": [
   {
   "id": "velvet-ship",
