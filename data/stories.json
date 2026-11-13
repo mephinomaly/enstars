@@ -515,6 +515,36 @@
         "url": "./stories/idol-stories/open-the-door/index.html",
         "dateAdded": "2026-11-13"
     }
+},
+
+     {
+    "id": "easter-to-you",
+    "title": "Easter To You",
+    "type": "event",
+    "image": "./images/stories/event/easter-to-you/easter-to-you.png",
+    "characters": [
+        "wataru",
+        "hinata",
+        "shinobu",
+        "hiiro",
+        "mika",
+        "midori",
+        "rei",
+        "ritsu",
+        "kanata",
+        "shu",
+        "tsumugi",
+        "rinne"
+    ],
+       "description": "meow",
+    "url": "./stories/event/easter-to-you/index.html",
+    "dateAdded": "2026-11-14",
+    "eventDate": "2022-04-15",
+    "latestChapter": {
+        "title": "Prologue",
+        "url": "./stories/event/easter-to-you/prologue.html",
+        "dateAdded": "2026-11-14"
+    }
 }
        ]
 }
