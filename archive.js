@@ -238,8 +238,8 @@ const unitOrders = {
     ],
     "rhythm-link": [
         "undead",
-        "akatsuki",
         "rabits",
+        "akatsuki",
         "mellow-dear-us"
     ],
     "new-dimension": [
@@ -266,7 +266,8 @@ units.sort((a, b) => {
     akatsuki: "AKATSUKI",
     "mellow-dear-us": "MELLOW DEAR US",
     eden: "Eden",
-    valkyrie: "Valkyrie"
+    valkyrie: "Valkyrie",
+    knights: "Knights"
 };
 
     units.forEach(unit => {
