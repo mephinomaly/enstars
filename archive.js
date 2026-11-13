@@ -270,9 +270,9 @@ units.sort((a, b) => {
     "mellow-dear-us": "MELLOW DEAR US",
     eden: "Eden",
     valkyrie: "Valkyrie",
-    2wink: "2wink",
+    "2wink": "2wink",
     crazyb: "Crazy:B",
-    knights: "Knights"
+    knights: "Knights",
     switch: "Switch"
 };
 
