@@ -234,7 +234,9 @@ const unitOrders = {
     ],
     "cosmic-production": [
         "eden",
-        "valkyrie"
+        "valkyrie",
+        "2wink",
+        "crazyb"
     ],
     "rhythm-link": [
         "undead",
@@ -243,7 +245,8 @@ const unitOrders = {
         "mellow-dear-us"
     ],
     "new-dimension": [
-        "knights"
+        "knights",
+        "switch"
     ]
 };
 
@@ -267,7 +270,10 @@ units.sort((a, b) => {
     "mellow-dear-us": "MELLOW DEAR US",
     eden: "Eden",
     valkyrie: "Valkyrie",
+    2wink: "2wink",
+    crazyb: "Crazy:B",
     knights: "Knights"
+    switch: "Switch"
 };
 
     units.forEach(unit => {
