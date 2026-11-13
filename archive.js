@@ -239,15 +239,15 @@ const unitOrder = [
 units.sort((a, b) => unitOrder.indexOf(a) - unitOrder.indexOf(b));
 
     const unitNames = {
-    undead: "UNDEAD",
-    eden: "Eden",
+    fine: "fine",
+    ryuseitai: "RYUSEITAI",
     alkaloid: "ALKALOID",
+    undead: "UNDEAD",
     rabits: "Ra*bits",
     akatsuki: "AKATSUKI",
-    fine: "fine",
     "mellow-dear-us": "MELLOW DEAR US",
-        ryuseitai: "RYUSEITAI",
-        valkyrie: "Valkyrie"
+    eden: "Eden",
+    valkyrie: "Valkyrie"
 };
 
     units.forEach(unit => {
