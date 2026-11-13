@@ -238,6 +238,41 @@
     "unit": "valkyrie",
     "agency": "cosmic-production",
     "image": "./images/characters/valkyrie/mika.png"
+},
+    {
+    "id": "tsukasa",
+    "name": "Tsukasa Suou",
+    "unit": "knights",
+    "agency": "new-dimension",
+    "image": "./images/characters/knights/tsukasa.png"
+},
+    {
+    "id": "leo",
+    "name": "Leo Tsukinaga",
+    "unit": "knights",
+    "agency": "new-dimension",
+    "image": "./images/characters/knights/leo.png"
+},
+    {
+    "id": "izumi",
+    "name": "Izumi Sena",
+    "unit": "knights",
+    "agency": "new-dimension",
+    "image": "./images/characters/knights/izumi.png"
+},
+    {
+    "id": "ritsu",
+    "name": "Ritsu Sakuma",
+    "unit": "knights",
+    "agency": "new-dimension",
+    "image": "./images/characters/knights/ritsu.png"
+},
+    {
+    "id": "arashi",
+    "name": "Arashi Narukami",
+    "unit": "knights",
+    "agency": "new-dimension",
+    "image": "./images/characters/knights/arashi.png"
 }
   ],
    "stories": [
