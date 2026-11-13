@@ -449,6 +449,22 @@
         "url": "./stories/idol-stories/rei-coffin-dilemma/index.html",
         "dateAdded": "2026-11-13"
     }
+},
+     {
+    "id": "open-the-door",
+    "title": "Open The Door",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/open-the-door/open-the-door.png",
+    "characters": ["mayoi", "arashi", "mika"],
+       "description": "meow",
+    "url": "./stories/idol-stories/open-the-door/index.html",
+    "dateAdded": "2026-11-13",
+    "eventDate": "2022-06-25",
+    "latestChapter": {
+        "title": "Open The Door",
+        "url": "./stories/idol-stories/open-the-door/index.html",
+        "dateAdded": "2026-11-13"
+    }
 }
        ]
 }
