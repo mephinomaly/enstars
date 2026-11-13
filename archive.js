@@ -246,7 +246,8 @@ units.sort((a, b) => unitOrder.indexOf(a) - unitOrder.indexOf(b));
     akatsuki: "AKATSUKI",
     fine: "fine",
     "mellow-dear-us": "MELLOW DEAR US",
-        ryuseitai: "RYUSEITAI"
+        ryuseitai: "RYUSEITAI",
+        valkyrie: "Valkyrie"
 };
 
     units.forEach(unit => {
