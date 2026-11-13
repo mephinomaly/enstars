@@ -232,17 +232,17 @@ const unitOrders = {
         "ryuseitai",
         "alkaloid"
     ],
-    cosmic-production: [
+    "cosmic-production": [
         "eden",
         "valkyrie"
     ],
-    rhythm-link: [
+    "rhythm-link": [
         "undead",
         "akatsuki",
         "rabits",
         "mellow-dear-us"
     ],
-    new-dimension: [
+    "new-dimension": [
         "knights"
     ]
 };
