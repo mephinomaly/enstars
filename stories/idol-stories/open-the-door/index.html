@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open The Door | Idol Story</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="chapter-page">
+
+            <a class="back-link" href="../../../index.html">
+                ← Back to directory
+            </a>
+
+            <div class="confession-header">
+                <div>
+                    <h1>Open The Door</h1>
+                    <p class="story-subtitle">Idol Story</p>
+                </div>
+
+                <img
+                    class="confession-card-art"
+                    src="../../../images/stories/idol-stories/open-the-door/open-the-door.png"
+                    alt="Open The Door card artwork"
+                >
+            </div>
+
+            <div class="chapter-characters">
+                <img
+                    src="../../../images/characters/alkaloid/mayoi.png"
+                    alt="Mayoi Ayase"
+                    title="Mayoi Ayase"
+                >
+                <img
+                    src="../../../images/characters/knights/arashi.png"
+                    alt="Arashi Narukami"
+                    title="Arashi Narukami"
+                >
+                <img
+                    src="../../../images/characters/valkyrie/mika.png"
+                    alt="Mika Kagehira"
+                    title="Mika Kagehira"
+                >
+            </div>
+
+            <div class="oissu">
+                <!-- Translation and story images will go here -->
+            </div>
+
+            <section class="prose-story-info">
+                <h2>Translation Information</h2>
+
+                <div class="prose-story-info-row">
+                    <span>Original release:</span>
+                    <span>25th June 2022</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Originally translated:</span>
+                    <span>26th June 2022</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Last revised:</span>
+                    <span>13th November 2026</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Translation:</span>
+                    <span>mephinomaly</span>
+                </div>
+
+              
+            </section>
+
+        </article>
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const currentTheme =
+                document.documentElement.dataset.theme || "light";
+
+            themeToggle.textContent =
+                currentTheme === "dark" ? "☀ Light mode" : "☾ Dark mode";
+        }
+
+        themeToggle.addEventListener("click", () => {
+            const currentTheme =
+                document.documentElement.dataset.theme || "light";
+
+            const newTheme =
+                currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+            updateThemeButton();
+        });
+
+        updateThemeButton();
+    </script>
+</body>
+</html>
