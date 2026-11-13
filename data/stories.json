@@ -438,15 +438,15 @@
     "id": "coffin-dilemma",
     "title": "Coffin Dilemma",
     "type": "idol",
-    "image": "./images/stories/idol-stories/coffin-dilemma/rei-coffin-dilemma.png",
-    "characters": ["rei", "koga", "aira", "eichi"],
+    "image": "./images/stories/idol-stories/rei-coffin-dilemma/rei-coffin-dilemma.png",
+    "characters": ["rei", "aira", "eichi", "koga"],
        "description": "meow",
     "url": "./stories/idol-stories/coffin-dilemma/index.html",
     "dateAdded": "2026-11-13",
     "eventDate": "2022-05-10",
     "latestChapter": {
         "title": "Coffin Dilemma",
-        "url": "./stories/idol-stories/coffin-dilemma/index.html",
+        "url": "./stories/idol-stories/rei-coffin-dilemma/index.html",
         "dateAdded": "2026-11-13"
     }
 }
