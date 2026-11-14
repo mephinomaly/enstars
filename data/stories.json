@@ -605,7 +605,31 @@
         "url": "./stories/event/easter-to-you/prologue.html",
         "dateAdded": "2026-11-14"
     }
+},
+     {
+    "id": "passion-is-key",
+    "title": "Passion Is The Key To Appeal",
+    "type": "scout",
+    "image": "./images/stories/scout/passion-is-key/passion-is-key.png",
+    "characters": [
+       "sora",
+      "kaoru",
+      "tetora",
+      "jun",
+      "chiaki",
+      "midori"
+    ],
+       "description": "meow",
+    "url": "./stories/event/easter-to-you/index.html",
+    "dateAdded": "2026-11-14",
+    "eventDate": "2026-11-14",
+    "latestChapter": {
+        "title": "Chapter 1",
+        "url": "./stories/event/easter-to-you/prologue.html",
+        "dateAdded": "2026-11-14"
+    }
 }
+     
        ]
 }
 
