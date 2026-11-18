@@ -628,6 +628,22 @@
         "url": "./stories/scout/passion-is-key/index.html",
         "dateAdded": "2026-11-15"
     }
+},
+     {
+    "id": "snake-bosom",
+    "title": "The Enemy Within",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/snake-bosom/.png",
+    "characters": ["ibara", "nagisa", "hiyori"],
+  "description": "plceiojgero",
+    "url": "./stories/idol-stories/snake-bosom/index.html",
+    "dateAdded": "2026-11-18",
+    "eventDate": "2023-07-23",
+    "latestChapter": {
+        "title": "The Enemy Within",
+        "url": "./stories/idol-stories/snake-bosom/index.html",
+        "dateAdded": "2026-11-18"
+    }
 }
      
        ]
