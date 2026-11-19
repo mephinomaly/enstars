@@ -644,6 +644,22 @@
         "url": "./stories/idol-stories/snake-bosom/index.html",
         "dateAdded": "2026-11-18"
     }
+},
+       {
+    "id": "amusement-wolf",
+    "title": "Amusement Wolf",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/amusement-wolf/wolfkoga.png",
+    "characters": ["koga", "makoto"],
+  "description": "whatttt",
+    "url": "./stories/idol-stories/amusement-wolf/index.html",
+    "dateAdded": "2026-11-19",
+    "eventDate": "2023-07-10",
+    "latestChapter": {
+        "title": "Amusement Wolf",
+        "url": "./stories/idol-stories/amusement-wolf/index.html",
+        "dateAdded": "2026-11-19"
+    }
 }
      
        ]
