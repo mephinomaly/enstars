@@ -134,6 +134,34 @@
   "agency": "starmaker",
   "image": "./images/characters/fine/yuzuru.png"
 },
+    { 
+      "id": "hokuto",
+"name": "Hokuto Hidaka",
+"unit": "trickstar",
+"agency": "starmaker",
+"image": "./images/characters/trickstar/hokuto.png"
+    },
+      { 
+      "id": "subaru",
+"name": "Subaru Akehoshi",
+"unit": "trickstar",
+"agency": "starmaker",
+"image": "./images/characters/trickstar/subaru.png"
+    },
+      { 
+      "id": "makoto",
+"name": "Makoto Yuuki",
+"unit": "trickstar",
+"agency": "starmaker",
+"image": "./images/characters/trickstar/makoto.png"
+    },
+      { 
+      "id": "mao",
+"name": "Mao Isara",
+"unit": "trickstar",
+"agency": "starmaker",
+"image": "./images/characters/trickstar/mao.png"
+    },
     {
   "id": "tetora",
   "name": "Tetora Nagumo",
