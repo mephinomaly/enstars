@@ -229,6 +229,7 @@ const units = [...new Set(
 const unitOrders = {
     starmaker: [
         "fine",
+        "trickstar",
         "ryuseitai",
         "alkaloid"
     ],
@@ -262,6 +263,7 @@ units.sort((a, b) => {
 
     const unitNames = {
     fine: "fine",
+    trickstar: "Trickstar",
     ryuseitai: "RYUSEITAI",
     alkaloid: "ALKALOID",
     undead: "UNDEAD",
