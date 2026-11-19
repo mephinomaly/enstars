@@ -688,6 +688,22 @@
         "url": "./stories/idol-stories/amusement-wolf/index.html",
         "dateAdded": "2026-11-19"
     }
+},
+      {
+    "id": "may-this-voice",
+    "title": "May My Voice Reach You",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/may-this-voice/ummm.png",
+    "characters": ["adonis", "souma"],
+  "description": "yyyy",
+    "url": "./stories/idol-stories/may-this-voice/index.html",
+    "dateAdded": "2026-11-19",
+    "eventDate": "2023-07-10",
+    "latestChapter": {
+        "title": "May My Voice Reach You",
+        "url": "./stories/idol-stories/may-this-voice/index.html",
+        "dateAdded": "2026-11-19"
+    }
 }
      
        ]
