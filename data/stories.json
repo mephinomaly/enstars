@@ -759,6 +759,22 @@
         "url": "./stories/scout/scorpio-venom/index.html",
         "dateAdded": "2026-11-21"
     }
+},
+         {
+    "id": "joy-of-cooking",
+    "title": "The Joy of Cooking",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/joy-of-cooking/cookingadonis.png",
+    "characters": ["adonis", "tetora", "izumi", "yuzuru"],
+  "description": "rgrrt",
+    "url": "./stories/idol-stories/hjoy-of-cooking/index.html",
+    "dateAdded": "2026-11-20",
+    "eventDate": "2023-02-25",
+    "latestChapter": {
+        "title": "The Joy of Cooking",
+        "url": "./stories/idol-stories/joy-of-cooking/index.html",
+        "dateAdded": "2026-11-20"
+    }
 }
 
  
