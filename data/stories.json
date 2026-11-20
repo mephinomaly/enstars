@@ -720,9 +720,25 @@
         "url": "./stories/idol-stories/family-tlc/index.html",
         "dateAdded": "2026-11-20"
     }
+},
+      {
+    "id": "howl-the-stars",
+    "title": "Howling to the Shooting Star",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/howl-the-stars/koga-fs2.png",
+    "characters": ["koga", "kaoru", "adonis", "rei"],
+  "description": "ergerg",
+    "url": "./stories/idol-stories/howl-the-stars/index.html",
+    "dateAdded": "2026-11-20",
+    "eventDate": "2023-05-25",
+    "latestChapter": {
+        "title": "Howling to the Shooting Star",
+        "url": "./stories/idol-stories/howl-the-stars/index.html",
+        "dateAdded": "2026-11-20"
+    }
 }
 
-   
+ 
      
        ]
 }
