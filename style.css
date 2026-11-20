@@ -900,3 +900,11 @@ body.page-leaving {
         font-size: 0.85rem;
     }
 }
+.oissu video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
