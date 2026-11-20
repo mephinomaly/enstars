@@ -736,6 +736,29 @@
         "url": "./stories/idol-stories/howl-the-stars/index.html",
         "dateAdded": "2026-11-20"
     }
+},
+          {
+    "id": "scorpio-venom",
+    "title": "Scout! Scorpio's Venom",
+    "type": "scout",
+    "image": "./images/stories/scout/scorpio-venom/passion-is-key.png",
+    "characters": [
+       "kaoru",
+      "tomoya",
+      "chiaki",
+      "hiiro",
+      "rei",
+      "kanata"
+    ],
+       "description": "gggjgj.",
+    "url": "./stories/scout/scorpio-venom/index.html",
+    "dateAdded": "2026-11-20",
+    "eventDate": "2023-03-30",
+    "latestChapter": {
+        "title": "Chapter 1",
+        "url": "./stories/scout/scorpio-venom/index.html",
+        "dateAdded": "2026-11-20"
+    }
 }
 
  
