@@ -704,7 +704,25 @@
         "url": "./stories/idol-stories/may-this-voice/index.html",
         "dateAdded": "2026-11-19"
     }
+},
+       {
+    "id": "family-tlc",
+    "title": "The Occasional Family TLC",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/family-tlc/ritsutlc.png.png",
+    "characters": ["ritsu", "kaoru", "rei"],
+  "description": "rrrr",
+    "url": "./stories/idol-stories/family-tlc/index.html",
+    "dateAdded": "2026-11-20",
+    "eventDate": "2023-06-25",
+    "latestChapter": {
+        "title": "The Occasional Family TLC",
+        "url": "./stories/idol-stories/family-tlc/index.html",
+        "dateAdded": "2026-11-20"
+    }
 }
+
+   
      
        ]
 }
