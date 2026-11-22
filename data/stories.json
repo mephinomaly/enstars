@@ -804,7 +804,7 @@
 },
        {
     "id": "emperor-hand",
-    "title": "Wanting A Hand From The Emperor",
+    "title": "A Hand From The Emperor",
     "type": "idol",
     "image": "./images/stories/idol-stories/emperor-hand/kinghand.png",
     "characters": ["eichi", "keito"],
@@ -813,8 +813,8 @@
     "dateAdded": "2026-11-22",
     "eventDate": "2022-12-10",
     "latestChapter": {
-        "title": "The Joy of Cooking",
-        "url": "./stories/idol-stories/joy-of-cooking/index.html",
+        "title": "A Hand From The Emperor",
+        "url": "./stories/idol-stories/emperor-hand/index.html",
         "dateAdded": "2026-11-22"
     }
 }
