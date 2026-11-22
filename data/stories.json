@@ -817,6 +817,22 @@
         "url": "./stories/idol-stories/emperor-hand/index.html",
         "dateAdded": "2026-11-22"
     }
+},
+            {
+    "id": "at-your-service",
+    "title": "At Your Service, Master!",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/at-your-service/chiakiservice.png",
+    "characters": ["chiaki", "tori"],
+  "description": "dgdfg",
+    "url": "./stories/idol-stories/at-your-service/index.html",
+    "dateAdded": "2026-11-22",
+    "eventDate": "2022-11-10",
+    "latestChapter": {
+        "title": "At Your Service, Master!",
+        "url": "./stories/idol-stories/at-your-service/index.html",
+        "dateAdded": "2026-11-22"
+    }
 }
 
  
