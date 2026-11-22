@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanting A Hand From The Emperora | Idol Story</title>
+
+    <script>
+        const savedTheme = localStorage.getItem("archive-theme");
+        if (savedTheme) {
+            document.documentElement.dataset.theme = savedTheme;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="../../../index.html">MEPHINOMALY ☾</a>
+            <button class="theme-button" id="theme-toggle" type="button">
+                ☾ Dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="chapter-page">
+            <a class="back-link" href="../../../index.html">← Back to directory</a>
+
+            <div class="confession-header">
+                <div>
+                    <h1>Wanting A Hand From The Emperor</h1>
+
+                    <div class="chapter-characters">
+ 
+                        <img src="../../../images/characters/fine/eichi.png" alt="Eichi Tenshouin">
+                  <img src="../../../images/characters/akatsuki/keito.png" alt="Keito Hasumi">
+                    </div>
+                </div>
+
+                <img
+                    class="confession-card-art"
+                    src="../../../images/stories/idol-storiesemperor-hand/kinghand.png"
+                    alt="hand card artwork"
+                >
+            </div>
+
+           <div class="oissu">
+               <blockquote><p><b>Season:</b> Summer</p></blockquote>
+                 <figure>
+    <img src="../../../images/stories/idol-stories/emperor-hand/hand1.png" alt="">
+</figure>
+             
+            </div>
+
+            <section class="prose-story-info">
+                <h2>Translation Information</h2>
+
+                <div class="prose-story-info-row">
+                    <span>Original release:</span>
+                    <span>12th December 2022</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Originally translated:</span>
+                    <span>16th December 2022</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Last revised:</span>
+                    <span>22nd November 2026</span>
+                </div>
+
+                <div class="prose-story-info-row">
+                    <span>Translation:</span>
+                    <span>mephinomaly</span>
+                </div>
+
+               
+            </section>
+        </article>
+    </main>
+
+    <script src="../../../main.js"></script>
+    <script src="../../../page-transition.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        function updateThemeButton() {
+            const isDark = document.documentElement.dataset.theme === "dark";
+            themeToggle.textContent = isDark ? "☀ Light mode" : "☾ Dark mode";
+        }
+
+        themeToggle.addEventListener("click", () => {
+            const isDark = document.documentElement.dataset.theme === "dark";
+            const newTheme = isDark ? "light" : "dark";
+
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem("archive-theme", newTheme);
+            updateThemeButton();
+        });
+
+        updateThemeButton();
+    </script>
+</body>
+</html>
