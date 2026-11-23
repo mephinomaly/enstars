@@ -833,8 +833,28 @@
         "url": "./stories/idol-stories/at-your-service/index.html",
         "dateAdded": "2026-11-22"
     }
+},
+ {
+    "id": "dolly-night",
+    "title": "Scout! Dolly Night",
+    "type": "scout",
+    "image": "./images/stories/scout/dolly-night/adonisdolly.png",
+    "characters": [
+       "adonis",
+      "hajime",
+      "mitsuru",
+      "aira"
+    ],
+       "description": "dggrg",
+    "url": "./stories/scout/dolly-night/index.html",
+    "dateAdded": "2026-11-23",
+    "eventDate": "2022-10-30",
+    "latestChapter": {
+        "title": "Chapter 1",
+        "url": "./stories/scout/dolly-night/index.html",
+        "dateAdded": "2026-11-23"
+    }
 }
-
  
      
        ]
