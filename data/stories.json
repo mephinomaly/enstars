@@ -856,10 +856,10 @@
     }
 },
        {
-    "id": "take-a-walk",
+    "id": "walk-with-me",
     "title": "Take A Walk With Me",
     "type": "idol",
-    "image": "./images/stories/idol-stories/take-a-walk/kanataplush.png",
+    "image": "./images/stories/idol-stories/walk-with-me/kanataplush.png",
     "characters": ["kanata", "izumi","shinobu","souma","kaoru","shu"],
   "description": "dgdg",
     "url": "./stories/idol-stories/take-a-walk/index.html",
@@ -867,7 +867,7 @@
     "eventDate": "2022-10-25",
     "latestChapter": {
         "title": "Take A Walk With Me",
-        "url": "./stories/idol-stories/take-a-walk/index.html",
+        "url": "./stories/idol-stories/walk-with-me/index.html",
         "dateAdded": "2026-11-23"
     }
 }
