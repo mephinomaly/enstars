@@ -870,6 +870,22 @@
         "url": "./stories/idol-stories/walk-with-me/index.html",
         "dateAdded": "2026-11-23"
     }
+},
+       {
+    "id": "king-moonlight",
+    "title": "The King Beneath The Moonlight",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/king-moonlight/reifs2.png",
+    "characters": ["rei", "koga","kuro","natsume"],
+  "description": "fff",
+    "url": "./stories/idol-stories/king-moonlight/index.html",
+    "dateAdded": "2026-11-23",
+    "eventDate": "2022-09-25",
+    "latestChapter": {
+        "title": "The King Beneath The Moonlight",
+        "url": "./stories/idol-stories/king-moonlight/index.html",
+        "dateAdded": "2026-11-23"
+    }
 }
  
      
