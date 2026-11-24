@@ -886,6 +886,28 @@
         "url": "./stories/idol-stories/king-moonlight/index.html",
         "dateAdded": "2026-11-23"
     }
+},
+      {
+    "id": "park-live",
+    "title": "Scout! Amusement Park Show",
+    "type": "scout",
+    "image": "./images/stories/scout/park-live/kaorupark.png",
+    "characters": [
+       "adonis",
+      "hajime",
+      "mitsuru",
+      "aira"
+    ],
+        "era": "es!",
+       "description": "Koga seems pretty excited to perform at an amusement park with the rest of UNDEAD, but due to a mistake, their audience is going to be... children!?",
+    "url": "./stories/scout/park-live/index.html",
+    "dateAdded": "2026-11-24",
+    "eventDate": "2016-01-14",
+    "latestChapter": {
+        "title": "Chapter 1",
+        "url": "./stories/scout/park-live/index.html",
+        "dateAdded": "2026-11-24"
+    }
 }
  
      
