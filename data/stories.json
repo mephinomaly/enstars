@@ -908,9 +908,26 @@
         "url": "./stories/scout/park-live/index.html",
         "dateAdded": "2026-11-24"
     }
+},
+      {
+    "id": "asking-god",
+    "title": "Dear God ☆",
+    "type": "idol",
+    "image": "./images/stories/idol-stories/asking-god/rinnegod.png",
+    "characters": ["rinne", "niki","kohaku","himeru", "kanata", "hiyori"],
+        "era": "es!!",
+  "description": "fgtg",
+    "url": "./stories/idol-stories/asking-god/index.html",
+    "dateAdded": "2026-11-24",
+    "eventDate": "2022-07-25",
+    "latestChapter": {
+        "title": " Dear God ☆",
+        "url": "./stories/idol-stories/asking-god/index.html",
+        "dateAdded": "2026-11-24"
+    }
 }
  
-     
+    
        ]
 }
 
