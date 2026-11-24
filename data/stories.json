@@ -925,6 +925,31 @@
         "url": "./stories/idol-stories/asking-god/index.html",
         "dateAdded": "2026-11-24"
     }
+},
+        {
+    "id": "keito-lecture",
+    "title": "Scout! Keito Lecture",
+    "type": "scout",
+    "image": "./images/stories/scout/keito-lecture/hiirolecture.png",
+    "characters": [
+       "hiiro",
+      "yuzuru",
+      "keito",
+      "aira",
+      "mika",
+      "kuro",
+      "tetora"
+    ],
+        "era": "es!!",
+       "description": "After a group study session, Keito deems it necessary to put Hiiro’s general knowledge to the test. After Kuro suggests it, they decide to go camping ",
+    "url": "./stories/scout/keito-lecture/index.html",
+    "dateAdded": "2026-11-25",
+    "eventDate": "2022-06-29",
+    "latestChapter": {
+        "title": "Chapter 1",
+        "url": "./stories/scout/keito-lecture/index.html",
+        "dateAdded": "2026-11-25"
+    }
 }
  
     
