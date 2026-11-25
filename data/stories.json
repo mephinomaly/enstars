@@ -626,12 +626,12 @@
     ],
        "description": "meow",
     "url": "./stories/event/easter-to-you/index.html",
-    "dateAdded": "2026-11-14",
+    "dateAdded": "2026-11-25",
     "eventDate": "2022-04-15",
     "latestChapter": {
         "title": "Prologue",
         "url": "./stories/event/easter-to-you/prologue.html",
-        "dateAdded": "2026-11-14"
+        "dateAdded": "2026-11-25"
     }
 },
      {
@@ -943,12 +943,12 @@
         "era": "es!!",
        "description": "After a group study session, Keito deems it necessary to put Hiiro’s general knowledge to the test. After Kuro suggests it, they decide to go camping ",
     "url": "./stories/scout/keito-lecture/index.html",
-    "dateAdded": "2026-11-25",
+    "dateAdded": "2026-11-24",
     "eventDate": "2022-06-29",
     "latestChapter": {
         "title": "Chapter 1",
         "url": "./stories/scout/keito-lecture/index.html",
-        "dateAdded": "2026-11-25"
+        "dateAdded": "2026-11-24"
     }
 }
  
