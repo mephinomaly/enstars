@@ -189,7 +189,7 @@ function renderCharacters() {
 
     agencyHeading.textContent = agency ? agency.name : "";
 
-    // Create the agency navigation buttons
+    // agency nav buttons
     agencies.forEach(item => {
         const button = makeElement(
             "button",
@@ -216,12 +216,12 @@ function renderCharacters() {
         agencyTabs.appendChild(button);
     });
 
-    // Get characters belonging to the selected agency
+    // assign agency
     const agencyCharacters = characters.filter(
         character => character.agency === currentAgency
     );
 
-  // Group characters by unit
+  // charac by unit
 const units = [...new Set(
     agencyCharacters.map(character => character.unit)
 )];
@@ -283,7 +283,7 @@ units.sort((a, b) => {
             character => character.unit === unit
         );
 const unitSection = makeElement("div", "unit-section");
-        // Clickable unit heading
+        // clickable unit heading
         const allSelected = unitCharacters.every(character =>
             selectedCharacters.includes(character.id)
         );
@@ -322,7 +322,7 @@ renderStoriesWithTransition();
 
       unitSection.appendChild(unitButton);
 
-        // Character portraits
+        //charac portraits
         const characterRow = makeElement("div", "unit-characters");
 
         unitCharacters.forEach(character => {
@@ -464,7 +464,7 @@ const matchesUnit = unitCharacters.every(id =>
    filteredStories
     .sort((a, b) => new Date(b.eventDate || "1900-01-01") - new Date(a.eventDate || "1900-01-01"))
     .forEach(story => {
-     // Create the expandable card
+     // card expand
 const card = makeElement("details", "story-card");
 
 if (story.type === "idol") {
@@ -475,10 +475,10 @@ if (story.id === "backdoor") {
     card.classList.add("backdoor-story-card");
 }
 
-        // The always-visible part of the card
+      
         const summary = makeElement("summary", "story-card-summary");
 
-        // Story thumbnail
+        
         const thumbnail = makeElement("div", "story-thumbnail");
 
         if (story.image) {
@@ -509,7 +509,7 @@ if (story.id === "backdoor") {
 
         summary.appendChild(thumbnail);
 
-        // Title and story information
+        // title story info
         const heading = makeElement("div", "story-heading");
 
         heading.appendChild(
@@ -526,14 +526,14 @@ if (story.id === "backdoor") {
 
         summary.appendChild(heading);
 
-        // Expand arrow
+      
         summary.appendChild(
             makeElement("span", "story-chevron", "⌄")
         );
 
         card.appendChild(summary);
 
-        // The expandable content
+  
         const expanded = makeElement("div", "story-expanded");
 
         const storyCharacters = (story.characters || [])
@@ -593,7 +593,6 @@ if (story.id === "backdoor") {
             expanded.appendChild(characterRow);
         }
 
-     // Story description
 if (story.description) {
     expanded.appendChild(
         makeElement("h4", "expanded-heading", "Summary")
@@ -604,7 +603,7 @@ if (story.description) {
 
     expanded.appendChild(description);
 }
-     // Read story link
+   
 const link = makeElement(
     "a",
     "story-link",
@@ -633,7 +632,7 @@ expanded.appendChild(link);
     });
 }
 
-// Gently transition when story results update
+
 let storyTransitionTimer;
 
 function renderStoriesWithTransition() {
@@ -695,7 +694,7 @@ unitFilter.addEventListener("change", () => {
     renderStoriesWithTransition();
 });
 
-// Quick story type filters
+
 const quickFilterButtons = document.querySelectorAll(".quick-filter");
 
 function updateQuickFilterButtons() {
@@ -715,7 +714,7 @@ quickFilterButtons.forEach(button => {
     });
 });
 
-// Keep quick buttons in sync with Advanced Search
+
 typeFilter.addEventListener("change", () => {
     updateQuickFilterButtons();
     renderStoriesWithTransition();
@@ -729,7 +728,7 @@ document.getElementById("clear-filters")
 
 updateQuickFilterButtons();
 
-// Light/dark theme toggle
+
 const themeButton = document.getElementById("theme-toggle");
 
 function updateThemeButton() {
