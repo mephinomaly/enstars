@@ -624,7 +624,7 @@
         "tsumugi",
         "rinne"
     ],
-       "description": "meow",
+       "description": "Shinobu, Mika, Hiiro, and Hinata hear that the Spring Festival previously called “Easter Night” has been rebranded as “Easter Fes.” Hinata requests that they form a shuffle unit, but he has a specific person in mind who he’d like to join…",
     "url": "./stories/event/easter-to-you/index.html",
     "dateAdded": "2026-11-25",
     "eventDate": "2022-04-15",
@@ -836,7 +836,7 @@
 },
  {
     "id": "dolly-night",
-    "title": "Scout! Dolly Night",
+    "title": "Scout! Dolly Knight",
     "type": "scout",
     "image": "./images/stories/scout/dolly-night/adonisdolly.png",
     "characters": [
