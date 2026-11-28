@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = 0;
 
-    // Create the lightbox
+// uhhhhhhhhhh lightbox
     const lightbox = document.createElement("div");
     lightbox.className = "card-lightbox";
     lightbox.setAttribute("role", "dialog");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevButton = lightbox.querySelector(".card-lightbox-prev");
     const nextButton = lightbox.querySelector(".card-lightbox-next");
 
-    // Display an image
+
     function showImage(index) {
         currentIndex = (index + galleryLinks.length) % galleryLinks.length;
 
@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         lightboxImage.alt = image.alt;
     }
 
-    // Open the lightbox
     galleryLinks.forEach((link, index) => {
         link.addEventListener("click", event => {
             event.preventDefault();
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Move between images
     prevButton.addEventListener("click", () => {
         showImage(currentIndex - 1);
     });
@@ -66,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
         showImage(currentIndex + 1);
     });
 
-    // Close the lightbox
     function closeLightbox() {
         lightbox.classList.remove("is-open");
         lightboxImage.src = "";
@@ -74,14 +71,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeButton.addEventListener("click", closeLightbox);
 
-    // Close when clicking the dark background
+    
     lightbox.addEventListener("click", event => {
         if (event.target === lightbox) {
             closeLightbox();
         }
     });
 
-    // Keyboard controls
+  
     document.addEventListener("keydown", event => {
         if (!lightbox.classList.contains("is-open")) return;
 
